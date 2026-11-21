@@ -1,0 +1,8062 @@
+{
+  "creeper": {
+    "identifier": "minecraft:creeper",
+    "min_engine_version": "1.8.0",
+    "materials": {
+      "default": "creeper",
+      "charged": "charged_creeper"
+    },
+    "textures": {
+      "default": "textures/entity/creeper/creeper",
+      "charged": "textures/entity/creeper/creeper_armor"
+    },
+    "geometry": {
+      "default": {
+        "visible_bounds_width": 1,
+        "visible_bounds_height": 2,
+        "visible_bounds_offset": [
+          0,
+          0.75,
+          0
+        ],
+        "texturewidth": 64,
+        "textureheight": 32,
+        "bones": [
+          {
+            "name": "body",
+            "cubes": [
+              {
+                "origin": [
+                  -4,
+                  6,
+                  -2
+                ],
+                "size": [
+                  8,
+                  12,
+                  4
+                ],
+                "uv": [
+                  16,
+                  16
+                ]
+              }
+            ]
+          },
+          {
+            "name": "head",
+            "parent": "body",
+            "pivot": [
+              0,
+              18,
+              0
+            ],
+            "cubes": [
+              {
+                "origin": [
+                  -4,
+                  18,
+                  -4
+                ],
+                "size": [
+                  8,
+                  8,
+                  8
+                ],
+                "uv": [
+                  0,
+                  0
+                ]
+              }
+            ]
+          },
+          {
+            "name": "leg0",
+            "parent": "body",
+            "pivot": [
+              -2,
+              6,
+              4
+            ],
+            "cubes": [
+              {
+                "origin": [
+                  -4,
+                  0,
+                  2
+                ],
+                "size": [
+                  4,
+                  6,
+                  4
+                ],
+                "uv": [
+                  0,
+                  16
+                ]
+              }
+            ]
+          },
+          {
+            "name": "leg1",
+            "parent": "body",
+            "pivot": [
+              2,
+              6,
+              4
+            ],
+            "cubes": [
+              {
+                "origin": [
+                  0,
+                  0,
+                  2
+                ],
+                "size": [
+                  4,
+                  6,
+                  4
+                ],
+                "uv": [
+                  0,
+                  16
+                ]
+              }
+            ]
+          },
+          {
+            "name": "leg2",
+            "parent": "body",
+            "pivot": [
+              -2,
+              6,
+              -4
+            ],
+            "cubes": [
+              {
+                "origin": [
+                  -4,
+                  0,
+                  -6
+                ],
+                "size": [
+                  4,
+                  6,
+                  4
+                ],
+                "uv": [
+                  0,
+                  16
+                ]
+              }
+            ]
+          },
+          {
+            "name": "leg3",
+            "parent": "body",
+            "pivot": [
+              2,
+              6,
+              -4
+            ],
+            "cubes": [
+              {
+                "origin": [
+                  0,
+                  0,
+                  -6
+                ],
+                "size": [
+                  4,
+                  6,
+                  4
+                ],
+                "uv": [
+                  0,
+                  16
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "charged": {
+        "visible_bounds_width": 1,
+        "visible_bounds_height": 2,
+        "visible_bounds_offset": [
+          0,
+          0.75,
+          0
+        ],
+        "texturewidth": 64,
+        "textureheight": 32,
+        "bones": [
+          {
+            "name": "body",
+            "cubes": [
+              {
+                "origin": [
+                  -4,
+                  6,
+                  -2
+                ],
+                "size": [
+                  8,
+                  12,
+                  4
+                ],
+                "uv": [
+                  16,
+                  16
+                ]
+              }
+            ],
+            "inflate": 2
+          },
+          {
+            "name": "head",
+            "parent": "body",
+            "pivot": [
+              0,
+              18,
+              0
+            ],
+            "cubes": [
+              {
+                "origin": [
+                  -4,
+                  18,
+                  -4
+                ],
+                "size": [
+                  8,
+                  8,
+                  8
+                ],
+                "uv": [
+                  0,
+                  0
+                ]
+              }
+            ],
+            "inflate": 2
+          },
+          {
+            "name": "leg0",
+            "parent": "body",
+            "pivot": [
+              -2,
+              6,
+              4
+            ],
+            "cubes": [
+              {
+                "origin": [
+                  -4,
+                  0,
+                  2
+                ],
+                "size": [
+                  4,
+                  6,
+                  4
+                ],
+                "uv": [
+                  0,
+                  16
+                ]
+              }
+            ],
+            "inflate": 2
+          },
+          {
+            "name": "leg1",
+            "parent": "body",
+            "pivot": [
+              2,
+              6,
+              4
+            ],
+            "cubes": [
+              {
+                "origin": [
+                  0,
+                  0,
+                  2
+                ],
+                "size": [
+                  4,
+                  6,
+                  4
+                ],
+                "uv": [
+                  0,
+                  16
+                ]
+              }
+            ],
+            "inflate": 2
+          },
+          {
+            "name": "leg2",
+            "parent": "body",
+            "pivot": [
+              -2,
+              6,
+              -4
+            ],
+            "cubes": [
+              {
+                "origin": [
+                  -4,
+                  0,
+                  -6
+                ],
+                "size": [
+                  4,
+                  6,
+                  4
+                ],
+                "uv": [
+                  0,
+                  16
+                ]
+              }
+            ],
+            "inflate": 2
+          },
+          {
+            "name": "leg3",
+            "parent": "body",
+            "pivot": [
+              2,
+              6,
+              -4
+            ],
+            "cubes": [
+              {
+                "origin": [
+                  0,
+                  0,
+                  -6
+                ],
+                "size": [
+                  4,
+                  6,
+                  4
+                ],
+                "uv": [
+                  0,
+                  16
+                ]
+              }
+            ],
+            "inflate": 2
+          }
+        ]
+      }
+    },
+    "spawn_egg": {
+      "texture": "spawn_egg",
+      "texture_index": 6
+    },
+    "scripts": {
+      "pre_animation": [
+        "variable.wobble = Math.sin(query.swell_amount * 5730) * query.swell_amount * 0.01 + 1.0;",
+        "variable.swelling_scale1 = (Math.pow(Math.clamp(query.swell_amount, 0.0, 1.0), 4.0) * 0.4 + 1.0) * variable.wobble;",
+        "variable.swelling_scale2 = (Math.pow(Math.clamp(query.swell_amount, 0.0, 1.0), 4.0) * 0.1 + 1.0) / variable.wobble;",
+        "variable.leg_rot = Math.cos(query.modified_distance_moved * 38.17326) * 80.22 * query.modified_move_speed;",
+        "variable.flash = Math.mod(Math.Round(query.swell_amount * 10.0), 2.0);"
+      ]
+    },
+    "animations": {
+      "creeper_head": {
+        "loop": true,
+        "bones": {
+          "head": {
+            "relative_to": {
+              "rotation": "entity"
+            },
+            "rotation": [
+              "query.target_x_rotation - this",
+              "query.target_y_rotation - this",
+              0
+            ]
+          }
+        }
+      },
+      "creeper_legs": {
+        "loop": true,
+        "bones": {
+          "leg0": {
+            "rotation": [
+              "variable.leg_rot - this",
+              0,
+              0
+            ]
+          },
+          "leg1": {
+            "rotation": [
+              "-variable.leg_rot - this",
+              0,
+              0
+            ]
+          },
+          "leg2": {
+            "rotation": [
+              "-variable.leg_rot - this",
+              0,
+              0
+            ]
+          },
+          "leg3": {
+            "rotation": [
+              "variable.leg_rot - this",
+              0,
+              0
+            ]
+          }
+        }
+      },
+      "creeper_swelling": {
+        "loop": true,
+        "bones": {
+          "body": {
+            "scale": [
+              "variable.swelling_scale1",
+              "variable.swelling_scale2",
+              "variable.swelling_scale1"
+            ]
+          },
+          "head": {
+            "scale": [
+              "variable.swelling_scale1",
+              "variable.swelling_scale2",
+              "variable.swelling_scale1"
+            ]
+          },
+          "leg0": {
+            "scale": [
+              "variable.swelling_scale1",
+              "variable.swelling_scale2",
+              "variable.swelling_scale1"
+            ]
+          },
+          "leg1": {
+            "scale": [
+              "variable.swelling_scale1",
+              "variable.swelling_scale2",
+              "variable.swelling_scale1"
+            ]
+          },
+          "leg2": {
+            "scale": [
+              "variable.swelling_scale1",
+              "variable.swelling_scale2",
+              "variable.swelling_scale1"
+            ]
+          },
+          "leg3": {
+            "scale": [
+              "variable.swelling_scale1",
+              "variable.swelling_scale2",
+              "variable.swelling_scale1"
+            ]
+          }
+        }
+      }
+    },
+    "animation_controllers": {
+      "creeper_head": {
+        "initial_state": "default",
+        "states": {
+          "default": {
+            "animations": [
+              "creeper_head"
+            ]
+          }
+        }
+      },
+      "creeper_legs": {
+        "initial_state": "default",
+        "states": {
+          "default": {
+            "animations": [
+              "creeper_legs"
+            ]
+          }
+        }
+      },
+      "creeper_swelling": {
+        "initial_state": "default",
+        "states": {
+          "default": {
+            "animations": [
+              "creeper_swelling"
+            ]
+          }
+        }
+      }
+    },
+    "render_controllers": [
+      "controller.render.creeper",
+      "controller.render.creeper_armor"
+    ]
+  },
+  "wolf": {
+    "identifier": "minecraft:wolf",
+    "materials": {
+      "default": "wolf"
+    },
+    "textures": {
+      "default": "textures/entity/wolf/wolf",
+      "angry": "textures/entity/wolf/wolf_angry",
+      "tame": "textures/entity/wolf/wolf_tame"
+    },
+    "geometry": {
+      "default": {
+        "visible_bounds_width": 1.5,
+        "visible_bounds_height": 1,
+        "visible_bounds_offset": [
+          0,
+          0.5,
+          0
+        ],
+        "texturewidth": 64,
+        "textureheight": 32,
+        "bones": [
+          {
+            "name": "head",
+            "pivot": [
+              -1,
+              10.5,
+              -7
+            ],
+            "locators": {
+              "lead": [
+                -1,
+                10.5,
+                -7
+              ]
+            },
+            "cubes": [
+              {
+                "origin": [
+                  -4,
+                  7.5,
+                  -9
+                ],
+                "size": [
+                  6,
+                  6,
+                  4
+                ],
+                "uv": [
+                  0,
+                  0
+                ]
+              },
+              {
+                "origin": [
+                  -4,
+                  13.5,
+                  -7
+                ],
+                "size": [
+                  2,
+                  2,
+                  1
+                ],
+                "uv": [
+                  16,
+                  14
+                ]
+              },
+              {
+                "origin": [
+                  0,
+                  13.5,
+                  -7
+                ],
+                "size": [
+                  2,
+                  2,
+                  1
+                ],
+                "uv": [
+                  16,
+                  14
+                ]
+              },
+              {
+                "origin": [
+                  -2.5,
+                  7.515625,
+                  -12
+                ],
+                "size": [
+                  3,
+                  3,
+                  4
+                ],
+                "uv": [
+                  0,
+                  10
+                ]
+              }
+            ]
+          },
+          {
+            "name": "body",
+            "pivot": [
+              0,
+              10,
+              2
+            ],
+            "cubes": [
+              {
+                "origin": [
+                  -4,
+                  3,
+                  -1
+                ],
+                "size": [
+                  6,
+                  9,
+                  6
+                ],
+                "uv": [
+                  18,
+                  14
+                ]
+              }
+            ]
+          },
+          {
+            "name": "upperBody",
+            "pivot": [
+              -1,
+              10,
+              2
+            ],
+            "cubes": [
+              {
+                "origin": [
+                  -5,
+                  7,
+                  -1
+                ],
+                "size": [
+                  8,
+                  6,
+                  7
+                ],
+                "uv": [
+                  21,
+                  0
+                ]
+              }
+            ]
+          },
+          {
+            "name": "leg0",
+            "pivot": [
+              -2.5,
+              8,
+              7
+            ],
+            "cubes": [
+              {
+                "origin": [
+                  -3.5,
+                  0,
+                  6
+                ],
+                "size": [
+                  2,
+                  8,
+                  2
+                ],
+                "uv": [
+                  0,
+                  18
+                ]
+              }
+            ]
+          },
+          {
+            "name": "leg1",
+            "pivot": [
+              0.5,
+              8,
+              7
+            ],
+            "cubes": [
+              {
+                "origin": [
+                  -0.5,
+                  0,
+                  6
+                ],
+                "size": [
+                  2,
+                  8,
+                  2
+                ],
+                "uv": [
+                  0,
+                  18
+                ]
+              }
+            ]
+          },
+          {
+            "name": "leg2",
+            "pivot": [
+              -2.5,
+              8,
+              -4
+            ],
+            "cubes": [
+              {
+                "origin": [
+                  -3.5,
+                  0,
+                  -5
+                ],
+                "size": [
+                  2,
+                  8,
+                  2
+                ],
+                "uv": [
+                  0,
+                  18
+                ]
+              }
+            ]
+          },
+          {
+            "name": "leg3",
+            "pivot": [
+              0.5,
+              8,
+              -4
+            ],
+            "cubes": [
+              {
+                "origin": [
+                  -0.5,
+                  0,
+                  -5
+                ],
+                "size": [
+                  2,
+                  8,
+                  2
+                ],
+                "uv": [
+                  0,
+                  18
+                ]
+              }
+            ]
+          },
+          {
+            "name": "tail",
+            "pivot": [
+              -1,
+              12,
+              8
+            ],
+            "cubes": [
+              {
+                "origin": [
+                  -2,
+                  4,
+                  7
+                ],
+                "size": [
+                  2,
+                  8,
+                  2
+                ],
+                "uv": [
+                  9,
+                  18
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    },
+    "scripts": {
+      "pre_animation": [
+        "variable.body_shake_angle = 0.05 * query.frame_alpha + query.shake_angle;",
+        "variable.body_roll_progress = Math.clamp((variable.body_shake_angle - 0.16) / 1.8, 0, 1);",
+        "variable.body_rot_z = Math.sin(variable.body_roll_progress * 180) * Math.sin(variable.body_roll_progress * 1980) * 27;",
+        "variable.upper_body_roll_progress = Math.clamp((variable.body_shake_angle - 0.08) / 1.8, 0, 1);",
+        "variable.upper_body_rot_z = (Math.sin(variable.upper_body_roll_progress * 180) * Math.sin(variable.upper_body_roll_progress * 1980) * 27) - variable.body_rot_z;",
+        "variable.tail_roll_progress = Math.clamp((variable.body_shake_angle - 0.2) / 1.8, 0, 1);",
+        "variable.tail_rot_z = (Math.sin(variable.tail_roll_progress * 180) * Math.sin(variable.tail_roll_progress * 1980) * 27) - variable.body_rot_z;",
+        "variable.head_roll_progress = Math.clamp(variable.body_shake_angle / 1.8, 0, 1);",
+        "variable.head_rot_z = (Math.sin(variable.head_roll_progress * 180) * Math.sin(variable.head_roll_progress * 1980) * 27) - variable.body_rot_z;"
+      ]
+    },
+    "animations": {
+      "wolf_setup": {
+        "loop": true,
+        "bones": {
+          "body": {
+            "position": [
+              "-this",
+              "-14 - this",
+              "2.0 - this"
+            ],
+            "rotation": [
+              "90 - this",
+              0,
+              0
+            ]
+          },
+          "leg0": {
+            "position": [
+              "-2.5 - this",
+              "-16 - this",
+              "7 - this"
+            ]
+          },
+          "leg1": {
+            "position": [
+              "0.5 - this",
+              "-16 - this",
+              "7 - this"
+            ]
+          },
+          "leg2": {
+            "position": [
+              "-2.5 - this",
+              "-16 - this",
+              "-4 - this"
+            ]
+          },
+          "leg3": {
+            "position": [
+              "0.5 - this",
+              "-16 - this",
+              "-4 - this"
+            ]
+          },
+          "tail": {
+            "position": [
+              "-1.0 - this",
+              "-12 - this",
+              "8.0 - this"
+            ]
+          },
+          "upperbody": {
+            "position": [
+              "-1.0 - this",
+              "-14 - this",
+              "-3.0 - this"
+            ],
+            "rotation": [
+              "90 - this",
+              0,
+              0
+            ]
+          }
+        }
+      },
+      "wolf_baby_scaling": {
+        "loop": true,
+        "bones": {
+          "head": {
+            "position": [
+              0,
+              1,
+              -2
+            ],
+            "scale": 1.6
+          }
+        }
+      },
+      "wolf_look_at": {
+        "loop": true,
+        "bones": {
+          "head": {
+            "relative_to": {
+              "rotation": "entity"
+            },
+            "rotation": [
+              "query.target_x_rotation - this",
+              "query.target_y_rotation - this",
+              0
+            ]
+          }
+        }
+      },
+      "wolf_head_rot_z": {
+        "loop": true,
+        "bones": {
+          "head": {
+            "rotation": [
+              0,
+              0,
+              "(query.is_interested ? (query.head_roll_angle * 57.3) : 0) + (query.is_shaking_wetness ? variable.head_rot_z : 0) - this"
+            ]
+          }
+        }
+      },
+      "wolf_tail_default": {
+        "loop": true,
+        "bones": {
+          "tail": {
+            "rotation": [
+              "query.tail_angle * 57.3 - this",
+              0,
+              "variable.tail_rot_z - this"
+            ]
+          }
+        }
+      },
+      "wolf_angry": {
+        "loop": true,
+        "bones": {
+          "tail": {
+            "rotation": [
+              0,
+              "query.is_angry ? -this : (math.cos(query.modified_distance_moved * 38.17) * query.modified_move_speed * 80.22 - this)",
+              0
+            ]
+          }
+        }
+      },
+      "wolf_sitting": {
+        "loop": true,
+        "bones": {
+          "body": {
+            "position": [
+              "-this",
+              "-18 - this",
+              "-this"
+            ],
+            "rotation": [
+              "45.0 - this",
+              0,
+              0
+            ]
+          },
+          "leg0": {
+            "position": [
+              "-2.5 - this",
+              "-22 - this",
+              "2 - this"
+            ],
+            "rotation": [
+              "270 - this",
+              0,
+              0
+            ]
+          },
+          "leg1": {
+            "position": [
+              "0.5 - this",
+              "-22 - this",
+              "2 - this"
+            ],
+            "rotation": [
+              "270 - this",
+              0,
+              0
+            ]
+          },
+          "leg2": {
+            "position": [
+              "-2.49 - this",
+              "-17 - this",
+              "-4 - this"
+            ],
+            "rotation": [
+              "333 - this",
+              0,
+              0
+            ]
+          },
+          "leg3": {
+            "position": [
+              "0.51 - this",
+              "-17 - this",
+              "-4 - this"
+            ],
+            "rotation": [
+              "333 - this",
+              0,
+              0
+            ]
+          },
+          "tail": {
+            "position": [
+              "-1.0 - this",
+              "-19 - this",
+              "6.0 - this"
+            ]
+          },
+          "upperbody": {
+            "position": [
+              "-1.0 - this",
+              "-16 - this",
+              "-3.0 - this"
+            ],
+            "rotation": [
+              "72 - this",
+              "-this",
+              0
+            ]
+          }
+        }
+      },
+      "wolf_shaking": {
+        "loop": true,
+        "bones": {
+          "body": {
+            "rotation": [
+              0,
+              0,
+              "variable.body_rot_z - this"
+            ]
+          },
+          "upperbody": {
+            "rotation": [
+              0,
+              0,
+              "variable.upper_body_rot_z - this"
+            ]
+          }
+        }
+      },
+      "wolf_leg_default": {
+        "loop": true,
+        "bones": {
+          "leg0": {
+            "rotation": [
+              "math.cos(query.modified_distance_moved * 38.17) * 80.22 * query.modified_move_speed - this",
+              0,
+              0
+            ]
+          },
+          "leg1": {
+            "rotation": [
+              "math.cos(query.modified_distance_moved * 38.17 + 180) * 80.22 * query.modified_move_speed - this",
+              0,
+              0
+            ]
+          },
+          "leg2": {
+            "rotation": [
+              "math.cos(query.modified_distance_moved * 38.17 + 180) * 80.22 * query.modified_move_speed - this",
+              0,
+              0
+            ]
+          },
+          "leg3": {
+            "rotation": [
+              "math.cos(query.modified_distance_moved * 38.17) * 80.22 * query.modified_move_speed - this",
+              0,
+              0
+            ]
+          }
+        }
+      }
+    },
+    "animation_controllers": {
+      "wolf_setup": {
+        "initial_state": "default",
+        "states": {
+          "default": {
+            "animations": [
+              "wolf_setup"
+            ]
+          }
+        }
+      },
+      "wolf_look_at": {
+        "initial_state": "default",
+        "states": {
+          "default": {
+            "animations": [
+              "wolf_look_at"
+            ]
+          }
+        }
+      },
+      "wolf_baby_scaling": {
+        "initial_state": "default",
+        "states": {
+          "baby": {
+            "animations": [
+              "wolf_baby_scaling"
+            ],
+            "transitions": [
+              {
+                "default": "!query.is_baby"
+              }
+            ]
+          },
+          "default": {
+            "transitions": [
+              {
+                "baby": "query.is_baby"
+              }
+            ]
+          }
+        }
+      },
+      "wolf_head_rot_z": {
+        "initial_state": "default",
+        "states": {
+          "default": {
+            "transitions": [
+              {
+                "rot": "query.is_interested || query.is_shaking_wetness"
+              }
+            ]
+          },
+          "rot": {
+            "animations": [
+              "wolf_head_rot_z"
+            ],
+            "transitions": [
+              {
+                "default": "!query.is_interested && !query.is_shaking_wetness"
+              }
+            ]
+          }
+        }
+      },
+      "wolf_tail_default": {
+        "initial_state": "default",
+        "states": {
+          "default": {
+            "animations": [
+              "wolf_tail_default"
+            ]
+          }
+        }
+      },
+      "wolf_angry": {
+        "initial_state": "default",
+        "states": {
+          "default": {
+            "animations": [
+              "wolf_angry"
+            ]
+          }
+        }
+      },
+      "wolf_sitting": {
+        "initial_state": "default",
+        "states": {
+          "default": {
+            "animations": [
+              "wolf_leg_default"
+            ],
+            "transitions": [
+              {
+                "sitting": "query.is_sitting"
+              }
+            ]
+          },
+          "sitting": {
+            "animations": [
+              "wolf_sitting"
+            ],
+            "transitions": [
+              {
+                "default": "!query.is_sitting"
+              }
+            ]
+          }
+        }
+      },
+      "wolf_shaking": {
+        "initial_state": "default",
+        "states": {
+          "default": {
+            "transitions": [
+              {
+                "shaking": "query.is_shaking_wetness"
+              }
+            ]
+          },
+          "shaking": {
+            "animations": [
+              "wolf_shaking"
+            ],
+            "transitions": [
+              {
+                "default": "!query.is_shaking_wetness"
+              }
+            ]
+          }
+        }
+      }
+    },
+    "render_controllers": [
+      "controller.render.wolf"
+    ],
+    "spawn_egg": {
+      "texture": "spawn_egg",
+      "texture_index": 4
+    }
+  },
+  "sheep": {
+    "identifier": "minecraft:sheep",
+    "min_engine_version": "1.8.0",
+    "materials": {
+      "default": "sheep"
+    },
+    "textures": {
+      "default": "textures/entity/sheep/sheep_fur",
+      "sheared": "textures/entity/sheep/sheep"
+    },
+    "geometry": {
+      "default": {
+        "visible_bounds_width": 2,
+        "visible_bounds_height": 1.75,
+        "visible_bounds_offset": [
+          0,
+          0.5,
+          0
+        ],
+        "bones": [
+          {
+            "name": "body",
+            "pivot": [
+              0,
+              11,
+              2
+            ],
+            "bind_pose_rotation": [
+              90,
+              0,
+              0
+            ],
+            "cubes": [
+              {
+                "origin": [
+                  -4,
+                  3,
+                  -5
+                ],
+                "size": [
+                  8,
+                  16,
+                  6
+                ],
+                "uv": [
+                  28,
+                  8
+                ],
+                "inflate": 1.75
+              }
+            ]
+          },
+          {
+            "name": "head",
+            "pivot": [
+              0,
+              13,
+              -8
+            ],
+            "cubes": [
+              {
+                "origin": [
+                  -3,
+                  11,
+                  -12
+                ],
+                "size": [
+                  6,
+                  6,
+                  6
+                ],
+                "uv": [
+                  0,
+                  0
+                ],
+                "inflate": 0.6
+              }
+            ]
+          },
+          {
+            "name": "leg0",
+            "pivot": [
+              -3,
+              12,
+              7
+            ],
+            "cubes": [
+              {
+                "origin": [
+                  -5,
+                  6,
+                  5
+                ],
+                "size": [
+                  4,
+                  6,
+                  4
+                ],
+                "uv": [
+                  0,
+                  16
+                ],
+                "inflate": 0.5
+              }
+            ]
+          },
+          {
+            "name": "leg1",
+            "pivot": [
+              3,
+              12,
+              7
+            ],
+            "cubes": [
+              {
+                "origin": [
+                  1,
+                  6,
+                  5
+                ],
+                "size": [
+                  4,
+                  6,
+                  4
+                ],
+                "uv": [
+                  0,
+                  16
+                ],
+                "inflate": 0.5
+              }
+            ]
+          },
+          {
+            "name": "leg2",
+            "pivot": [
+              -3,
+              12,
+              -5
+            ],
+            "cubes": [
+              {
+                "origin": [
+                  -5,
+                  6,
+                  -7
+                ],
+                "size": [
+                  4,
+                  6,
+                  4
+                ],
+                "uv": [
+                  0,
+                  16
+                ],
+                "inflate": 0.5
+              }
+            ]
+          },
+          {
+            "name": "leg3",
+            "pivot": [
+              3,
+              12,
+              -5
+            ],
+            "cubes": [
+              {
+                "origin": [
+                  1,
+                  6,
+                  -7
+                ],
+                "size": [
+                  4,
+                  6,
+                  4
+                ],
+                "uv": [
+                  0,
+                  16
+                ],
+                "inflate": 0.5
+              }
+            ]
+          }
+        ],
+        "texturewidth": 64,
+        "textureheight": 32
+      },
+      "sheared": {
+        "visible_bounds_width": 2,
+        "visible_bounds_height": 1.75,
+        "visible_bounds_offset": [
+          0,
+          0.5,
+          0
+        ],
+        "bones": [
+          {
+            "name": "body",
+            "pivot": [
+              0,
+              11,
+              2
+            ],
+            "bind_pose_rotation": [
+              90,
+              0,
+              0
+            ],
+            "cubes": [
+              {
+                "origin": [
+                  -4,
+                  3,
+                  -5
+                ],
+                "size": [
+                  8,
+                  16,
+                  6
+                ],
+                "uv": [
+                  28,
+                  8
+                ]
+              }
+            ]
+          },
+          {
+            "name": "head",
+            "pivot": [
+              0,
+              13,
+              -8
+            ],
+            "locators": {
+              "lead": [
+                0,
+                13,
+                -8
+              ]
+            },
+            "cubes": [
+              {
+                "origin": [
+                  -3,
+                  11,
+                  -14
+                ],
+                "size": [
+                  6,
+                  6,
+                  8
+                ],
+                "uv": [
+                  0,
+                  0
+                ]
+              }
+            ]
+          },
+          {
+            "name": "leg0",
+            "pivot": [
+              -3,
+              12,
+              7
+            ],
+            "cubes": [
+              {
+                "origin": [
+                  -5,
+                  0,
+                  5
+                ],
+                "size": [
+                  4,
+                  12,
+                  4
+                ],
+                "uv": [
+                  0,
+                  16
+                ]
+              }
+            ]
+          },
+          {
+            "name": "leg1",
+            "pivot": [
+              3,
+              12,
+              7
+            ],
+            "cubes": [
+              {
+                "origin": [
+                  1,
+                  0,
+                  5
+                ],
+                "size": [
+                  4,
+                  12,
+                  4
+                ],
+                "uv": [
+                  0,
+                  16
+                ]
+              }
+            ]
+          },
+          {
+            "name": "leg2",
+            "pivot": [
+              -3,
+              12,
+              -5
+            ],
+            "cubes": [
+              {
+                "origin": [
+                  -5,
+                  0,
+                  -7
+                ],
+                "size": [
+                  4,
+                  12,
+                  4
+                ],
+                "uv": [
+                  0,
+                  16
+                ]
+              }
+            ]
+          },
+          {
+            "name": "leg3",
+            "pivot": [
+              3,
+              12,
+              -5
+            ],
+            "cubes": [
+              {
+                "origin": [
+                  1,
+                  0,
+                  -7
+                ],
+                "size": [
+                  4,
+                  12,
+                  4
+                ],
+                "uv": [
+                  0,
+                  16
+                ]
+              }
+            ]
+          }
+        ],
+        "texturewidth": 64,
+        "textureheight": 32
+      }
+    },
+    "animations": {
+      "setup": {
+        "loop": true,
+        "bones": {
+          "body": {
+            "rotation": [
+              "-this",
+              0,
+              0
+            ]
+          },
+          "head": {
+            "position": [
+              0,
+              "-6.0 - this",
+              0
+            ]
+          }
+        }
+      },
+      "grazing": {
+        "animation_length": 2,
+        "loop": true,
+        "bones": {
+          "head": {
+            "position": {
+              "0": [
+                0,
+                0,
+                0
+              ],
+              "2": [
+                0,
+                0,
+                0
+              ],
+              "0.2": [
+                0,
+                -9,
+                0
+              ],
+              "1.8": [
+                0,
+                -9,
+                0
+              ]
+            },
+            "rotation": {
+              "0.2": {
+                "post": [
+                  "180.0 * (0.2 + 0.07 * math.sin(query.key_frame_lerp_time * 1644.39))",
+                  0,
+                  0
+                ],
+                "pre": [
+                  36,
+                  0,
+                  0
+                ]
+              },
+              "1.8": {
+                "post": [
+                  36,
+                  0,
+                  0
+                ],
+                "pre": [
+                  "180.0 * (0.2 + 0.07 * math.sin(query.key_frame_lerp_time * 1644.39))",
+                  0,
+                  0
+                ]
+              }
+            }
+          }
+        }
+      },
+      "walk": {
+        "anim_time_update": "query.modified_distance_moved",
+        "loop": true,
+        "bones": {
+          "leg0": {
+            "rotation": [
+              "math.cos(query.anim_time * 38.17) *  80.0",
+              0,
+              0
+            ]
+          },
+          "leg1": {
+            "rotation": [
+              "math.cos(query.anim_time * 38.17) * -80.0",
+              0,
+              0
+            ]
+          },
+          "leg2": {
+            "rotation": [
+              "math.cos(query.anim_time * 38.17) * -80.0",
+              0,
+              0
+            ]
+          },
+          "leg3": {
+            "rotation": [
+              "math.cos(query.anim_time * 38.17) *  80.0",
+              0,
+              0
+            ]
+          }
+        }
+      },
+      "look_at_target": {
+        "loop": true,
+        "bones": {
+          "head": {
+            "relative_to": {
+              "rotation": "entity"
+            },
+            "rotation": [
+              "query.target_x_rotation - this",
+              "query.target_y_rotation - this",
+              0
+            ]
+          }
+        }
+      },
+      "baby_transform": {
+        "loop": true,
+        "bones": {
+          "head": {
+            "position": [
+              0,
+              4,
+              4
+            ],
+            "scale": 2
+          }
+        }
+      }
+    },
+    "scripts": {
+      "animate": [
+        "setup",
+        "look_at_target",
+        "move",
+        {
+          "baby_transform": "query.is_baby"
+        }
+      ]
+    },
+    "render_controllers": [
+      "controller.render.sheep"
+    ],
+    "spawn_egg": {
+      "texture": "spawn_egg",
+      "texture_index": 3
+    },
+    "animation_controllers": {
+      "move": {
+        "initial_state": "default",
+        "states": {
+          "default": {
+            "animations": [
+              {
+                "walk": "query.modified_move_speed"
+              }
+            ],
+            "transitions": [
+              {
+                "grazing": "query.is_grazing"
+              }
+            ]
+          },
+          "grazing": {
+            "animations": [
+              "grazing"
+            ],
+            "transitions": [
+              {
+                "default": "query.all_animations_finished"
+              }
+            ]
+          }
+        }
+      }
+    }
+  },
+  "pig": {
+    "identifier": "minecraft:pig",
+    "min_engine_version": "1.8.0",
+    "materials": {
+      "default": "pig"
+    },
+    "textures": {
+      "default": "textures/entity/pig/pig",
+      "saddled": "textures/entity/pig/pig_saddle"
+    },
+    "geometry": {
+      "default": {
+        "visible_bounds_width": 2,
+        "visible_bounds_height": 1.5,
+        "visible_bounds_offset": [
+          0,
+          0.5,
+          0
+        ],
+        "texturewidth": 64,
+        "textureheight": 32,
+        "bones": [
+          {
+            "name": "body",
+            "pivot": [
+              0,
+              7,
+              2
+            ],
+            "bind_pose_rotation": [
+              90,
+              0,
+              0
+            ],
+            "cubes": [
+              {
+                "origin": [
+                  -5,
+                  -1,
+                  -5
+                ],
+                "size": [
+                  10,
+                  16,
+                  8
+                ],
+                "uv": [
+                  28,
+                  8
+                ]
+              }
+            ]
+          },
+          {
+            "name": "head",
+            "pivot": [
+              0,
+              12,
+              -6
+            ],
+            "locators": {
+              "lead": [
+                0,
+                14,
+                -6
+              ]
+            },
+            "cubes": [
+              {
+                "origin": [
+                  -4,
+                  8,
+                  -14
+                ],
+                "size": [
+                  8,
+                  8,
+                  8
+                ],
+                "uv": [
+                  0,
+                  0
+                ]
+              },
+              {
+                "origin": [
+                  -2,
+                  9,
+                  -15
+                ],
+                "size": [
+                  4,
+                  3,
+                  1
+                ],
+                "uv": [
+                  16,
+                  16
+                ]
+              }
+            ]
+          },
+          {
+            "name": "leg0",
+            "pivot": [
+              -3,
+              6,
+              7
+            ],
+            "cubes": [
+              {
+                "origin": [
+                  -5,
+                  0,
+                  5
+                ],
+                "size": [
+                  4,
+                  6,
+                  4
+                ],
+                "uv": [
+                  0,
+                  16
+                ]
+              }
+            ]
+          },
+          {
+            "name": "leg1",
+            "mirror": true,
+            "pivot": [
+              3,
+              6,
+              7
+            ],
+            "cubes": [
+              {
+                "origin": [
+                  1,
+                  0,
+                  5
+                ],
+                "size": [
+                  4,
+                  6,
+                  4
+                ],
+                "uv": [
+                  0,
+                  16
+                ]
+              }
+            ]
+          },
+          {
+            "name": "leg2",
+            "pivot": [
+              -3,
+              6,
+              -5
+            ],
+            "cubes": [
+              {
+                "origin": [
+                  -5,
+                  0,
+                  -7
+                ],
+                "size": [
+                  4,
+                  6,
+                  4
+                ],
+                "uv": [
+                  0,
+                  16
+                ]
+              }
+            ]
+          },
+          {
+            "name": "leg3",
+            "mirror": true,
+            "pivot": [
+              3,
+              6,
+              -5
+            ],
+            "cubes": [
+              {
+                "origin": [
+                  1,
+                  0,
+                  -7
+                ],
+                "size": [
+                  4,
+                  6,
+                  4
+                ],
+                "uv": [
+                  0,
+                  16
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    },
+    "animations": {
+      "setup": {
+        "loop": true,
+        "bones": {
+          "body": {
+            "rotation": [
+              "-this",
+              0,
+              0
+            ]
+          }
+        }
+      },
+      "walk": {
+        "anim_time_update": "query.modified_distance_moved",
+        "loop": true,
+        "bones": {
+          "leg0": {
+            "rotation": [
+              "math.cos(query.anim_time * 38.17) *  80.0",
+              0,
+              0
+            ]
+          },
+          "leg1": {
+            "rotation": [
+              "math.cos(query.anim_time * 38.17) * -80.0",
+              0,
+              0
+            ]
+          },
+          "leg2": {
+            "rotation": [
+              "math.cos(query.anim_time * 38.17) * -80.0",
+              0,
+              0
+            ]
+          },
+          "leg3": {
+            "rotation": [
+              "math.cos(query.anim_time * 38.17) *  80.0",
+              0,
+              0
+            ]
+          }
+        }
+      },
+      "look_at_target": {
+        "loop": true,
+        "bones": {
+          "head": {
+            "relative_to": {
+              "rotation": "entity"
+            },
+            "rotation": [
+              "query.target_x_rotation - this",
+              "query.target_y_rotation - this",
+              0
+            ]
+          }
+        }
+      },
+      "baby_transform": {
+        "loop": true,
+        "bones": {
+          "head": {
+            "position": [
+              0,
+              4,
+              4
+            ],
+            "scale": 2
+          }
+        }
+      }
+    },
+    "scripts": {
+      "animate": [
+        "setup",
+        {
+          "walk": "query.modified_move_speed"
+        },
+        "look_at_target",
+        {
+          "baby_transform": "query.is_baby"
+        }
+      ]
+    },
+    "render_controllers": [
+      "controller.render.pig"
+    ],
+    "spawn_egg": {
+      "texture": "spawn_egg",
+      "texture_index": 2
+    }
+  },
+  "bee": {
+    "identifier": "minecraft:bee",
+    "materials": {
+      "default": "bee"
+    },
+    "textures": {
+      "default": "textures/entity/bee/bee",
+      "angry": "textures/entity/bee/bee_angry",
+      "nectar": "textures/entity/bee/bee_nectar",
+      "angry_nectar": "textures/entity/bee/bee_angry_nectar"
+    },
+    "geometry": {
+      "default": {
+        "texturewidth": 64,
+        "textureheight": 64,
+        "visible_bounds_width": 1.5,
+        "visible_bounds_height": 1.5,
+        "visible_bounds_offset": [
+          0,
+          0.25,
+          0
+        ],
+        "bones": [
+          {
+            "name": "body",
+            "pivot": [
+              0.5,
+              5,
+              0
+            ],
+            "cubes": [
+              {
+                "origin": [
+                  -3,
+                  2,
+                  -5
+                ],
+                "size": [
+                  7,
+                  7,
+                  10
+                ],
+                "uv": [
+                  0,
+                  0
+                ]
+              },
+              {
+                "origin": [
+                  2,
+                  7,
+                  -8
+                ],
+                "size": [
+                  1,
+                  2,
+                  3
+                ],
+                "uv": [
+                  2,
+                  0
+                ]
+              },
+              {
+                "origin": [
+                  -2,
+                  7,
+                  -8
+                ],
+                "size": [
+                  1,
+                  2,
+                  3
+                ],
+                "uv": [
+                  2,
+                  3
+                ]
+              }
+            ],
+            "locators": {
+              "lead": [
+                0,
+                4,
+                -1
+              ]
+            }
+          },
+          {
+            "name": "stinger",
+            "parent": "body",
+            "pivot": [
+              0.5,
+              6,
+              1
+            ],
+            "cubes": [
+              {
+                "origin": [
+                  0.5,
+                  5,
+                  5
+                ],
+                "size": [
+                  0,
+                  1,
+                  2
+                ],
+                "uv": [
+                  26,
+                  7
+                ]
+              }
+            ]
+          },
+          {
+            "name": "rightwing_bone",
+            "parent": "body",
+            "pivot": [
+              -1,
+              9,
+              -3
+            ],
+            "rotation": [
+              15,
+              -15,
+              0
+            ],
+            "cubes": [
+              {
+                "origin": [
+                  -10,
+                  9,
+                  -3
+                ],
+                "size": [
+                  9,
+                  0,
+                  6
+                ],
+                "uv": [
+                  0,
+                  18
+                ]
+              }
+            ]
+          },
+          {
+            "name": "leftwing_bone",
+            "parent": "body",
+            "pivot": [
+              2,
+              9,
+              -3
+            ],
+            "rotation": [
+              15,
+              15,
+              0
+            ],
+            "cubes": [
+              {
+                "origin": [
+                  2,
+                  9,
+                  -3
+                ],
+                "size": [
+                  9,
+                  0,
+                  6
+                ],
+                "uv": [
+                  9,
+                  24
+                ]
+              }
+            ]
+          },
+          {
+            "name": "leg_front",
+            "parent": "body",
+            "pivot": [
+              2,
+              2,
+              -2
+            ],
+            "cubes": [
+              {
+                "origin": [
+                  -3,
+                  0,
+                  -2
+                ],
+                "size": [
+                  7,
+                  2,
+                  0
+                ],
+                "uv": [
+                  26,
+                  1
+                ]
+              }
+            ]
+          },
+          {
+            "name": "leg_mid",
+            "parent": "body",
+            "pivot": [
+              2,
+              2,
+              0
+            ],
+            "cubes": [
+              {
+                "origin": [
+                  -3,
+                  0,
+                  0
+                ],
+                "size": [
+                  7,
+                  2,
+                  0
+                ],
+                "uv": [
+                  26,
+                  3
+                ]
+              }
+            ]
+          },
+          {
+            "name": "leg_back",
+            "parent": "body",
+            "pivot": [
+              2,
+              2,
+              2
+            ],
+            "cubes": [
+              {
+                "origin": [
+                  -3,
+                  0,
+                  2
+                ],
+                "size": [
+                  7,
+                  2,
+                  0
+                ],
+                "uv": [
+                  26,
+                  5
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    },
+    "animations": {
+      "flying": {
+        "loop": true,
+        "animation_length": 2.55,
+        "bones": {
+          "body": {
+            "rotation": {
+              "0.0": [
+                0,
+                0,
+                0
+              ],
+              "1.30": [
+                5,
+                0,
+                0
+              ],
+              "2.55": [
+                0,
+                0,
+                0
+              ]
+            }
+          },
+          "leftwing_bone": {
+            "rotation": {
+              "0.0": [
+                0,
+                0,
+                35
+              ],
+              "0.05": [
+                0,
+                0,
+                0
+              ],
+              "0.10": [
+                0,
+                0,
+                -35
+              ],
+              "0.15": [
+                0,
+                0,
+                0
+              ],
+              "0.2": [
+                0,
+                0,
+                35
+              ],
+              "0.25": [
+                0,
+                0,
+                0
+              ],
+              "0.30": [
+                0,
+                0,
+                -35
+              ],
+              "0.35": [
+                0,
+                0,
+                0
+              ],
+              "0.40": [
+                0,
+                0,
+                35
+              ],
+              "0.45": [
+                0,
+                0,
+                0
+              ],
+              "0.50": [
+                0,
+                0,
+                -35
+              ],
+              "0.55": [
+                0,
+                0,
+                0
+              ],
+              "0.60": [
+                0,
+                0,
+                35
+              ],
+              "0.65": [
+                0,
+                0,
+                0
+              ],
+              "0.70": [
+                0,
+                0,
+                -35
+              ],
+              "0.75": [
+                0,
+                0,
+                0
+              ],
+              "0.80": [
+                0,
+                0,
+                35
+              ],
+              "0.85": [
+                0,
+                0,
+                0
+              ],
+              "0.90": [
+                0,
+                0,
+                -35
+              ],
+              "0.95": [
+                0,
+                0,
+                0
+              ],
+              "1.0": [
+                0,
+                0,
+                35
+              ],
+              "1.05": [
+                0,
+                0,
+                0
+              ],
+              "1.10": [
+                0,
+                0,
+                -35
+              ],
+              "1.15": [
+                0,
+                0,
+                0
+              ],
+              "1.20": [
+                0,
+                0,
+                35
+              ],
+              "1.25": [
+                0,
+                0,
+                0
+              ],
+              "1.30": [
+                0,
+                0,
+                -35
+              ],
+              "1.35": [
+                0,
+                0,
+                0
+              ],
+              "1.40": [
+                0,
+                0,
+                35
+              ],
+              "1.45": [
+                0,
+                0,
+                0
+              ],
+              "1.50": [
+                0,
+                0,
+                -35
+              ],
+              "1.55": [
+                0,
+                0,
+                0
+              ],
+              "1.60": [
+                0,
+                0,
+                35
+              ],
+              "1.65": [
+                0,
+                0,
+                0
+              ],
+              "1.70": [
+                0,
+                0,
+                -35
+              ],
+              "1.75": [
+                0,
+                0,
+                0
+              ],
+              "1.80": [
+                0,
+                0,
+                35
+              ],
+              "1.85": [
+                0,
+                0,
+                0
+              ],
+              "1.90": [
+                0,
+                0,
+                -35
+              ],
+              "1.95": [
+                0,
+                0,
+                0
+              ],
+              "2.0": [
+                0,
+                0,
+                35
+              ],
+              "2.05": [
+                0,
+                0,
+                0
+              ],
+              "2.10": [
+                0,
+                0,
+                -35
+              ],
+              "2.15": [
+                0,
+                0,
+                0
+              ],
+              "2.20": [
+                0,
+                0,
+                35
+              ],
+              "2.25": [
+                0,
+                0,
+                0
+              ],
+              "2.30": [
+                0,
+                0,
+                -35
+              ],
+              "2.35": [
+                0,
+                0,
+                0
+              ],
+              "2.40": [
+                0,
+                0,
+                35
+              ],
+              "2.45": [
+                0,
+                0,
+                0
+              ],
+              "2.50": [
+                0,
+                0,
+                -35
+              ],
+              "2.55": [
+                0,
+                0,
+                0
+              ]
+            }
+          },
+          "leg_front": {
+            "rotation": {
+              "0.0": [
+                15,
+                0,
+                0
+              ],
+              "1.20": [
+                25,
+                0,
+                0
+              ],
+              "2.55": [
+                15,
+                0,
+                0
+              ]
+            }
+          },
+          "leg_mid": {
+            "rotation": {
+              "0.0": [
+                15,
+                0,
+                0
+              ],
+              "1.30": [
+                35,
+                0,
+                0
+              ],
+              "2.55": [
+                15,
+                0,
+                0
+              ]
+            }
+          },
+          "leg_back": {
+            "rotation": {
+              "0.0": [
+                30,
+                0,
+                0
+              ],
+              "1.60": [
+                45,
+                0,
+                0
+              ],
+              "2.55": [
+                30,
+                0,
+                0
+              ]
+            }
+          },
+          "rightwing_bone": {
+            "rotation": {
+              "0.0": [
+                0,
+                0,
+                -35
+              ],
+              "0.05": [
+                0,
+                0,
+                0
+              ],
+              "0.10": [
+                0,
+                0,
+                35
+              ],
+              "0.15": [
+                0,
+                0,
+                0
+              ],
+              "0.2": [
+                0,
+                0,
+                -35
+              ],
+              "0.25": [
+                0,
+                0,
+                0
+              ],
+              "0.30": [
+                0,
+                0,
+                35
+              ],
+              "0.35": [
+                0,
+                0,
+                0
+              ],
+              "0.40": [
+                0,
+                0,
+                -35
+              ],
+              "0.45": [
+                0,
+                0,
+                0
+              ],
+              "0.50": [
+                0,
+                0,
+                35
+              ],
+              "0.55": [
+                0,
+                0,
+                0
+              ],
+              "0.60": [
+                0,
+                0,
+                -35
+              ],
+              "0.65": [
+                0,
+                0,
+                0
+              ],
+              "0.70": [
+                0,
+                0,
+                35
+              ],
+              "0.75": [
+                0,
+                0,
+                0
+              ],
+              "0.80": [
+                0,
+                0,
+                -35
+              ],
+              "0.85": [
+                0,
+                0,
+                0
+              ],
+              "0.90": [
+                0,
+                0,
+                35
+              ],
+              "0.95": [
+                0,
+                0,
+                0
+              ],
+              "1.0": [
+                0,
+                0,
+                -35
+              ],
+              "1.05": [
+                0,
+                0,
+                0
+              ],
+              "1.10": [
+                0,
+                0,
+                35
+              ],
+              "1.15": [
+                0,
+                0,
+                0
+              ],
+              "1.20": [
+                0,
+                0,
+                -35
+              ],
+              "1.25": [
+                0,
+                0,
+                0
+              ],
+              "1.30": [
+                0,
+                0,
+                35
+              ],
+              "1.35": [
+                0,
+                0,
+                0
+              ],
+              "1.40": [
+                0,
+                0,
+                -35
+              ],
+              "1.45": [
+                0,
+                0,
+                0
+              ],
+              "1.50": [
+                0,
+                0,
+                35
+              ],
+              "1.55": [
+                0,
+                0,
+                0
+              ],
+              "1.60": [
+                0,
+                0,
+                -35
+              ],
+              "1.65": [
+                0,
+                0,
+                0
+              ],
+              "1.70": [
+                0,
+                0,
+                35
+              ],
+              "1.75": [
+                0,
+                0,
+                0
+              ],
+              "1.80": [
+                0,
+                0,
+                -35
+              ],
+              "1.85": [
+                0,
+                0,
+                0
+              ],
+              "1.90": [
+                0,
+                0,
+                35
+              ],
+              "1.95": [
+                0,
+                0,
+                0
+              ],
+              "2.0": [
+                0,
+                0,
+                -35
+              ],
+              "2.05": [
+                0,
+                0,
+                0
+              ],
+              "2.10": [
+                0,
+                0,
+                35
+              ],
+              "2.15": [
+                0,
+                0,
+                0
+              ],
+              "2.20": [
+                0,
+                0,
+                -35
+              ],
+              "2.25": [
+                0,
+                0,
+                0
+              ],
+              "2.30": [
+                0,
+                0,
+                35
+              ],
+              "2.35": [
+                0,
+                0,
+                0
+              ],
+              "2.40": [
+                0,
+                0,
+                -35
+              ],
+              "2.45": [
+                0,
+                0,
+                0
+              ],
+              "2.50": [
+                0,
+                0,
+                35
+              ],
+              "2.55": [
+                0,
+                0,
+                0
+              ]
+            }
+          }
+        }
+      },
+      "bee_sting": {
+        "loop": true,
+        "bones": {
+          "body": {
+            "rotation": [
+              "-175 * math.sin(variable.attack_time * 180)",
+              0,
+              0
+            ]
+          }
+        }
+      },
+      "bee_no_stinger": {
+        "loop": true,
+        "bones": {
+          "stinger": {
+            "scale": 0
+          }
+        }
+      },
+      "bee_fly_bobbing": {
+        "loop": true,
+        "bones": {
+          "body": {
+            "position": [
+              0,
+              "math.cos(query.life_time * 343.774) * 1.6",
+              0
+            ],
+            "rotation": [
+              0,
+              "20 * math.cos(query.life_time * 343.774 / 2)",
+              0
+            ]
+          }
+        }
+      }
+    },
+    "particle_effects": {
+      "nectar_dripping": "minecraft:nectar_drip_particle"
+    },
+    "scripts": {
+      "animate": [
+        "bee_root_controller",
+        {
+          "bee_no_stinger": "query.mark_variant == 1"
+        }
+      ]
+    },
+    "render_controllers": [
+      "controller.render.bee"
+    ],
+    "spawn_egg": {
+      "texture": "egg_bee",
+      "texture_index": 0
+    },
+    "animation_controllers": {
+      "drip": {
+        "initial_state": "default",
+        "states": {
+          "default": {
+            "transitions": [
+              {
+                "dripping": "query.is_powered"
+              }
+            ]
+          },
+          "dripping": {
+            "particle_effects": [
+              {
+                "effect": "nectar_dripping"
+              }
+            ],
+            "transitions": [
+              {
+                "default": "!query.is_powered"
+              }
+            ]
+          }
+        }
+      },
+      "controller_bee_sting": {
+        "initial_state": "default",
+        "states": {
+          "default": {
+            "animations": [
+              "bee_sting"
+            ]
+          }
+        }
+      },
+      "bee_root_controller": {
+        "initial_state": "default",
+        "states": {
+          "default": {
+            "animations": [
+              "flying",
+              "drip",
+              "bee_fly_bobbing",
+              "controller_bee_sting"
+            ]
+          }
+        }
+      }
+    }
+  },
+  "enderman": {
+    "identifier": "minecraft:enderman",
+    "min_engine_version": "1.8.0",
+    "materials": {
+      "default": "enderman",
+      "invisible": "enderman_invisible"
+    },
+    "textures": {
+      "default": "textures/entity/enderman/enderman"
+    },
+    "geometry": {
+      "default": {
+        "visible_bounds_width": 1.5,
+        "visible_bounds_height": 3,
+        "visible_bounds_offset": [
+          0,
+          1.5,
+          0
+        ],
+        "texturewidth": 64,
+        "textureheight": 32,
+        "bones": [
+          {
+            "name": "hat",
+            "parent": "head",
+            "reset": true,
+            "pivot": [
+              0,
+              38,
+              0
+            ],
+            "cubes": [
+              {
+                "origin": [
+                  -4,
+                  37.5,
+                  -4
+                ],
+                "size": [
+                  8,
+                  8,
+                  8
+                ],
+                "uv": [
+                  0,
+                  16
+                ],
+                "inflate": -0.5
+              }
+            ],
+            "neverRender": false
+          },
+          {
+            "name": "head",
+            "parent": "body",
+            "pivot": [
+              0,
+              38,
+              0
+            ],
+            "cubes": [
+              {
+                "origin": [
+                  -4,
+                  38,
+                  -4
+                ],
+                "size": [
+                  8,
+                  8,
+                  8
+                ],
+                "uv": [
+                  0,
+                  0
+                ]
+              }
+            ]
+          },
+          {
+            "name": "body",
+            "reset": true,
+            "pivot": [
+              0,
+              38,
+              0
+            ],
+            "cubes": [
+              {
+                "origin": [
+                  -4,
+                  26,
+                  -2
+                ],
+                "size": [
+                  8,
+                  12,
+                  4
+                ],
+                "uv": [
+                  32,
+                  16
+                ]
+              }
+            ]
+          },
+          {
+            "name": "rightArm",
+            "parent": "body",
+            "reset": true,
+            "pivot": [
+              -3,
+              36,
+              0
+            ],
+            "cubes": [
+              {
+                "origin": [
+                  -4,
+                  8,
+                  -1
+                ],
+                "size": [
+                  2,
+                  30,
+                  2
+                ],
+                "uv": [
+                  56,
+                  0
+                ]
+              }
+            ]
+          },
+          {
+            "name": "rightItem",
+            "pivot": [
+              -6,
+              15,
+              1
+            ],
+            "neverRender": true,
+            "parent": "rightArm"
+          },
+          {
+            "name": "leftArm",
+            "parent": "body",
+            "reset": true,
+            "mirror": true,
+            "pivot": [
+              5,
+              36,
+              0
+            ],
+            "cubes": [
+              {
+                "origin": [
+                  4,
+                  8,
+                  -1
+                ],
+                "size": [
+                  2,
+                  30,
+                  2
+                ],
+                "uv": [
+                  56,
+                  0
+                ]
+              }
+            ]
+          },
+          {
+            "name": "rightLeg",
+            "parent": "body",
+            "reset": true,
+            "pivot": [
+              -2,
+              26,
+              0
+            ],
+            "cubes": [
+              {
+                "origin": [
+                  -3,
+                  -4,
+                  -1
+                ],
+                "size": [
+                  2,
+                  30,
+                  2
+                ],
+                "uv": [
+                  56,
+                  0
+                ]
+              }
+            ]
+          },
+          {
+            "name": "leftLeg",
+            "parent": "body",
+            "reset": true,
+            "mirror": true,
+            "pivot": [
+              2,
+              26,
+              0
+            ],
+            "cubes": [
+              {
+                "origin": [
+                  1,
+                  -4,
+                  -1
+                ],
+                "size": [
+                  2,
+                  30,
+                  2
+                ],
+                "uv": [
+                  56,
+                  0
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    },
+    "scripts": {
+      "pre_animation": [
+        "variable.tcos0 = (Math.cos(query.modified_distance_moved * 38.17) * query.modified_move_speed / variable.gliding_speed_value) * 28.65;"
+      ]
+    },
+    "animations": {
+      "look_at_target_default": {
+        "loop": true,
+        "bones": {
+          "head": {
+            "relative_to": {
+              "rotation": "entity"
+            },
+            "rotation": [
+              "query.target_x_rotation",
+              "query.target_y_rotation",
+              0
+            ]
+          }
+        }
+      },
+      "look_at_target_gliding": {
+        "loop": true,
+        "bones": {
+          "head": {
+            "rotation": [
+              -45,
+              "query.target_y_rotation",
+              0
+            ]
+          }
+        }
+      },
+      "look_at_target_swimming": {
+        "loop": true,
+        "bones": {
+          "head": {
+            "rotation": [
+              "math.lerp(query.target_x_rotation, -45.0, variable.swim_amount)",
+              "query.target_y_rotation",
+              0
+            ]
+          }
+        }
+      },
+      "move": {
+        "loop": true,
+        "bones": {
+          "leftarm": {
+            "rotation": [
+              "variable.tcos0",
+              0,
+              0
+            ]
+          },
+          "leftleg": {
+            "rotation": [
+              "variable.tcos0 * -1.4",
+              0,
+              0
+            ]
+          },
+          "rightarm": {
+            "rotation": [
+              "-variable.tcos0",
+              0,
+              0
+            ]
+          },
+          "rightleg": {
+            "rotation": [
+              "variable.tcos0 * 1.4",
+              0,
+              0
+            ]
+          }
+        }
+      },
+      "attack.rotations": {
+        "loop": true,
+        "bones": {
+          "body": {
+            "rotation": [
+              0,
+              "math.sin(math.sqrt(variable.attack_time) * 360) * 11.46 - this",
+              0
+            ]
+          },
+          "leftarm": {
+            "rotation": [
+              "math.sin(math.sqrt(variable.attack_time) * 360) * 11.46",
+              0,
+              0
+            ]
+          },
+          "rightarm": {
+            "rotation": [
+              "math.sin(1.0 - math.pow(1.0 - variable.attack_time, 3.0) * 180.0) * (variable.is_brandishing_spear ? -1.0 : 1.0 )",
+              "variable.is_brandishing_spear ? 0.0 : (math.sin(math.sqrt(variable.attack_time) * 360) * 11.46) * 2.0",
+              0
+            ]
+          }
+        }
+      },
+      "bob": {
+        "loop": true,
+        "bones": {
+          "leftarm": {
+            "rotation": [
+              0,
+              0,
+              "((math.cos(query.life_time * 103.2) * 2.865) + 2.865) *-1.0"
+            ]
+          },
+          "rightarm": {
+            "rotation": [
+              0,
+              0,
+              "(math.cos(query.life_time * 103.2) * 2.865) + 2.865"
+            ]
+          }
+        }
+      },
+      "base_pose": {
+        "loop": true,
+        "bones": {
+          "body": {
+            "position": [
+              "-this",
+              "11.0 - this",
+              "-this"
+            ],
+            "rotation": [
+              "-this",
+              0,
+              0
+            ]
+          },
+          "hat": {
+            "position": [
+              "-this",
+              "-this",
+              "-this"
+            ],
+            "rotation": [
+              "-this",
+              "-this",
+              "-this"
+            ]
+          },
+          "head": {
+            "position": [
+              "-this",
+              "-this",
+              "-this"
+            ]
+          },
+          "leftarm": {
+            "position": [
+              "4.0-this",
+              0,
+              "-this"
+            ]
+          },
+          "leftleg": {
+            "position": [
+              0,
+              "-5.0 - this",
+              0
+            ]
+          },
+          "rightarm": {
+            "position": [
+              "-4.0-this",
+              0,
+              "-this"
+            ]
+          },
+          "rightleg": {
+            "position": [
+              0,
+              "-5.0 - this",
+              0
+            ]
+          }
+        }
+      },
+      "arms_legs": {
+        "loop": true,
+        "bones": {
+          "leftarm": {
+            "rotation": [
+              "math.clamp(this, -22.92, 22.92) - this",
+              0,
+              0
+            ]
+          },
+          "leftleg": {
+            "rotation": [
+              "math.clamp(this, -22.92, 22.92) - this",
+              0,
+              0
+            ]
+          },
+          "rightarm": {
+            "rotation": [
+              "math.clamp(this, -22.92, 22.92) - this",
+              0,
+              0
+            ]
+          },
+          "rightleg": {
+            "rotation": [
+              "math.clamp(this, -22.92, 22.92) - this",
+              0,
+              0
+            ]
+          }
+        }
+      },
+      "carrying": {
+        "loop": true,
+        "bones": {
+          "leftarm": {
+            "rotation": [
+              "-28.65 - this",
+              0,
+              "-2.87 - this"
+            ]
+          },
+          "rightarm": {
+            "rotation": [
+              "-28.65 - this",
+              0,
+              "2.87 - this"
+            ]
+          }
+        }
+      },
+      "scary_face": {
+        "loop": true,
+        "bones": {
+          "hat": {
+            "position": [
+              0,
+              "-5.0 - this",
+              0
+            ]
+          },
+          "head": {
+            "position": [
+              0,
+              "5.0 - this",
+              0
+            ]
+          }
+        }
+      }
+    },
+    "animation_controllers": {
+      "look_at_target": {
+        "initial_state": "default",
+        "states": {
+          "default": {
+            "animations": [
+              "look_at_target_default"
+            ],
+            "transitions": [
+              {
+                "gliding": "query.is_gliding"
+              },
+              {
+                "swimming": "query.is_swimming"
+              }
+            ]
+          },
+          "gliding": {
+            "animations": [
+              "look_at_target_gliding"
+            ],
+            "transitions": [
+              {
+                "swimming": "query.is_swimming"
+              },
+              {
+                "default": "!query.is_gliding"
+              }
+            ]
+          },
+          "swimming": {
+            "animations": [
+              "look_at_target_swimming"
+            ],
+            "transitions": [
+              {
+                "gliding": "query.is_gliding"
+              },
+              {
+                "default": "!query.is_swimming"
+              }
+            ]
+          }
+        }
+      },
+      "move": {
+        "initial_state": "default",
+        "states": {
+          "default": {
+            "animations": [
+              "move"
+            ]
+          }
+        }
+      },
+      "attack": {
+        "initial_state": "default",
+        "states": {
+          "attacking": {
+            "animations": [
+              "attack.rotations"
+            ],
+            "transitions": [
+              {
+                "default": "variable.attack_time < 0.0"
+              }
+            ]
+          },
+          "default": {
+            "transitions": [
+              {
+                "attacking": "variable.attack_time >= 0.0"
+              }
+            ]
+          }
+        }
+      },
+      "bob": {
+        "initial_state": "default",
+        "states": {
+          "default": {
+            "animations": [
+              "bob"
+            ]
+          }
+        }
+      },
+      "base_pose": {
+        "initial_state": "default",
+        "states": {
+          "default": {
+            "animations": [
+              "base_pose",
+              "arms_legs"
+            ]
+          }
+        }
+      },
+      "carrying": {
+        "initial_state": "default",
+        "states": {
+          "carry": {
+            "animations": [
+              "carrying"
+            ],
+            "transitions": [
+              {
+                "default": "!query.is_carrying_block"
+              }
+            ]
+          },
+          "default": {
+            "transitions": [
+              {
+                "carry": "query.is_carrying_block"
+              }
+            ]
+          }
+        }
+      },
+      "scary_face": {
+        "initial_state": "default",
+        "states": {
+          "default": {
+            "transitions": [
+              {
+                "scary": "query.is_angry"
+              }
+            ]
+          },
+          "scary": {
+            "animations": [
+              "scary_face"
+            ],
+            "transitions": [
+              {
+                "default": "!query.is_angry"
+              }
+            ]
+          }
+        }
+      }
+    },
+    "render_controllers": [
+      "controller.render.enderman"
+    ],
+    "spawn_egg": {
+      "texture": "spawn_egg",
+      "texture_index": 7
+    }
+  },
+  "slime": {
+    "identifier": "minecraft:slime",
+    "materials": {
+      "default": "slime",
+      "outer": "slime_outer"
+    },
+    "textures": {
+      "default": "textures/entity/slime/slime"
+    },
+    "geometry": {
+      "default": {
+        "visible_bounds_width": 5,
+        "visible_bounds_height": 2,
+        "visible_bounds_offset": [
+          0,
+          1,
+          0
+        ],
+        "texturewidth": 64,
+        "textureheight": 32,
+        "bones": [
+          {
+            "name": "cube",
+            "pivot": [
+              0,
+              24,
+              0
+            ],
+            "cubes": [
+              {
+                "origin": [
+                  -3,
+                  1,
+                  -3
+                ],
+                "size": [
+                  6,
+                  6,
+                  6
+                ],
+                "uv": [
+                  0,
+                  16
+                ]
+              }
+            ]
+          },
+          {
+            "name": "eye0",
+            "parent": "cube",
+            "pivot": [
+              0,
+              24,
+              0
+            ],
+            "cubes": [
+              {
+                "origin": [
+                  -3.3,
+                  4,
+                  -3.5
+                ],
+                "size": [
+                  2,
+                  2,
+                  2
+                ],
+                "uv": [
+                  32,
+                  0
+                ]
+              }
+            ]
+          },
+          {
+            "name": "eye1",
+            "parent": "cube",
+            "pivot": [
+              0,
+              24,
+              0
+            ],
+            "cubes": [
+              {
+                "origin": [
+                  1.3,
+                  4,
+                  -3.5
+                ],
+                "size": [
+                  2,
+                  2,
+                  2
+                ],
+                "uv": [
+                  32,
+                  4
+                ]
+              }
+            ]
+          },
+          {
+            "name": "mouth",
+            "parent": "cube",
+            "pivot": [
+              0,
+              24,
+              0
+            ],
+            "cubes": [
+              {
+                "origin": [
+                  0,
+                  2,
+                  -3.5
+                ],
+                "size": [
+                  1,
+                  1,
+                  1
+                ],
+                "uv": [
+                  32,
+                  8
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "armor": {
+        "visible_bounds_width": 1,
+        "visible_bounds_height": 1,
+        "visible_bounds_offset": [
+          0,
+          0.5,
+          0
+        ],
+        "texturewidth": 64,
+        "textureheight": 32,
+        "bones": [
+          {
+            "name": "cube",
+            "pivot": [
+              0,
+              24,
+              0
+            ],
+            "cubes": [
+              {
+                "origin": [
+                  -4,
+                  0,
+                  -4
+                ],
+                "size": [
+                  8,
+                  8,
+                  8
+                ],
+                "uv": [
+                  0,
+                  0
+                ]
+              }
+            ]
+          },
+          {
+            "name": "eye0",
+            "parent": "cube",
+            "pivot": [
+              0,
+              24,
+              0
+            ],
+            "cubes": [
+              {
+                "origin": [
+                  -3.3,
+                  4,
+                  -3.5
+                ],
+                "size": [
+                  2,
+                  2,
+                  2
+                ],
+                "uv": [
+                  32,
+                  0
+                ]
+              }
+            ]
+          },
+          {
+            "name": "eye1",
+            "parent": "cube",
+            "pivot": [
+              0,
+              24,
+              0
+            ],
+            "cubes": [
+              {
+                "origin": [
+                  1.3,
+                  4,
+                  -3.5
+                ],
+                "size": [
+                  2,
+                  2,
+                  2
+                ],
+                "uv": [
+                  32,
+                  4
+                ]
+              }
+            ]
+          },
+          {
+            "name": "mouth",
+            "parent": "cube",
+            "pivot": [
+              0,
+              24,
+              0
+            ],
+            "cubes": [
+              {
+                "origin": [
+                  0,
+                  2,
+                  -3.5
+                ],
+                "size": [
+                  1,
+                  1,
+                  1
+                ],
+                "uv": [
+                  32,
+                  8
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    },
+    "scripts": {
+      "pre_animation": [
+        "variable.squish_factor = (query.previous_squish_value + (query.current_squish_value - query.previous_squish_value) * query.frame_alpha);",
+        "variable.bounce = 1 / ((variable.squish_factor / (query.variant * 0.5 + 1)) + 1);",
+        "variable.horizontal_scale_amount = variable.bounce * query.variant;",
+        "variable.vertical_scale_amount = (1 / variable.bounce) * query.variant;"
+      ],
+      "scaleX": "variable.horizontal_scale_amount",
+      "scaleY": "variable.vertical_scale_amount",
+      "scaleZ": "variable.horizontal_scale_amount"
+    },
+    "render_controllers": [
+      "controller.render.slime",
+      "controller.render.slime_armor"
+    ],
+    "spawn_egg": {
+      "texture": "spawn_egg",
+      "texture_index": 10
+    }
+  },
+  "allay": {
+    "identifier": "minecraft:allay",
+    "textures": {
+      "default": "textures/entity/allay/allay"
+    },
+    "geometry": {
+      "default": {
+        "texturewidth": 32,
+        "textureheight": 32,
+        "bones": [
+          {
+            "name": "root",
+            "pivot": [
+              0,
+              1,
+              0
+            ],
+            "locators": {
+              "lead_hold": [
+                0,
+                25,
+                0
+              ]
+            }
+          },
+          {
+            "name": "head",
+            "parent": "root",
+            "pivot": [
+              0,
+              5,
+              0
+            ]
+          },
+          {
+            "name": "look_at",
+            "parent": "head",
+            "pivot": [
+              0,
+              5,
+              0.75
+            ],
+            "cubes": [
+              {
+                "origin": [
+                  -2.5,
+                  5.01,
+                  -2.5
+                ],
+                "size": [
+                  5,
+                  5,
+                  5
+                ],
+                "uv": [
+                  0,
+                  0
+                ]
+              }
+            ]
+          },
+          {
+            "name": "body",
+            "parent": "root",
+            "pivot": [
+              0,
+              5,
+              0
+            ],
+            "cubes": [
+              {
+                "origin": [
+                  -1.5,
+                  1,
+                  -1
+                ],
+                "size": [
+                  3,
+                  4,
+                  2
+                ],
+                "uv": [
+                  0,
+                  10
+                ]
+              },
+              {
+                "origin": [
+                  -1.5,
+                  0,
+                  -1
+                ],
+                "size": [
+                  3,
+                  5,
+                  2
+                ],
+                "inflate": -0.2,
+                "uv": [
+                  0,
+                  16
+                ]
+              }
+            ],
+            "locators": {
+              "lead": [
+                0,
+                6,
+                0
+              ]
+            }
+          },
+          {
+            "name": "rightItem",
+            "parent": "body",
+            "pivot": [
+              0,
+              0,
+              -2
+            ],
+            "rotation": [
+              -80,
+              0,
+              0
+            ]
+          },
+          {
+            "name": "right_arm",
+            "parent": "body",
+            "pivot": [
+              -1.75,
+              4.5,
+              0
+            ],
+            "cubes": [
+              {
+                "origin": [
+                  -2.5,
+                  1,
+                  -1
+                ],
+                "size": [
+                  1,
+                  4,
+                  2
+                ],
+                "uv": [
+                  23,
+                  0
+                ]
+              }
+            ]
+          },
+          {
+            "name": "left_arm",
+            "parent": "body",
+            "pivot": [
+              1.75,
+              4.5,
+              0
+            ],
+            "cubes": [
+              {
+                "origin": [
+                  1.5,
+                  1,
+                  -1
+                ],
+                "size": [
+                  1,
+                  4,
+                  2
+                ],
+                "uv": [
+                  23,
+                  6
+                ]
+              }
+            ]
+          },
+          {
+            "name": "left_wing",
+            "parent": "body",
+            "pivot": [
+              0.5,
+              4,
+              1
+            ],
+            "cubes": [
+              {
+                "origin": [
+                  0.5,
+                  -1,
+                  1
+                ],
+                "size": [
+                  0,
+                  5,
+                  8
+                ],
+                "uv": [
+                  16,
+                  14
+                ]
+              }
+            ]
+          },
+          {
+            "name": "right_wing",
+            "parent": "body",
+            "pivot": [
+              -0.5,
+              4,
+              1
+            ],
+            "cubes": [
+              {
+                "origin": [
+                  -0.5,
+                  -1,
+                  1
+                ],
+                "size": [
+                  0,
+                  5,
+                  8
+                ],
+                "uv": [
+                  16,
+                  14
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "axolotl": {
+    "identifier": "minecraft:axolotl",
+    "textures": {
+      "default": "textures/entity/axolotl/axolotl_lucy"
+    },
+    "geometry": {
+      "default": {
+        "texturewidth": 64,
+        "textureheight": 64,
+        "bones": [
+          {
+            "name": "root",
+            "pivot": [
+              0,
+              -4,
+              0
+            ]
+          },
+          {
+            "name": "body",
+            "parent": "root",
+            "pivot": [
+              0,
+              3,
+              4
+            ],
+            "cubes": [
+              {
+                "origin": [
+                  -4,
+                  0,
+                  -5
+                ],
+                "size": [
+                  8,
+                  4,
+                  10
+                ],
+                "uv": [
+                  0,
+                  11
+                ]
+              },
+              {
+                "origin": [
+                  0,
+                  0,
+                  -5
+                ],
+                "size": [
+                  0,
+                  5,
+                  9
+                ],
+                "uv": [
+                  2,
+                  17
+                ]
+              }
+            ],
+            "locators": {
+              "lead": [
+                0,
+                0,
+                -5
+              ],
+              "lead_hold": [
+                0,
+                23,
+                0
+              ]
+            }
+          },
+          {
+            "name": "right_arm",
+            "parent": "body",
+            "pivot": [
+              -4,
+              1,
+              -4
+            ],
+            "rotation": [
+              0,
+              -90,
+              0
+            ],
+            "cubes": [
+              {
+                "origin": [
+                  -6,
+                  -4,
+                  -4
+                ],
+                "size": [
+                  3,
+                  5,
+                  0
+                ],
+                "uv": [
+                  2,
+                  13
+                ]
+              }
+            ]
+          },
+          {
+            "name": "right_leg",
+            "parent": "body",
+            "pivot": [
+              -4,
+              1,
+              4
+            ],
+            "rotation": [
+              0,
+              90,
+              0
+            ],
+            "cubes": [
+              {
+                "origin": [
+                  -5,
+                  -4,
+                  4
+                ],
+                "size": [
+                  3,
+                  5,
+                  0
+                ],
+                "uv": [
+                  2,
+                  13
+                ]
+              }
+            ]
+          },
+          {
+            "name": "left_arm",
+            "parent": "body",
+            "pivot": [
+              4,
+              1,
+              -4
+            ],
+            "rotation": [
+              0,
+              90,
+              0
+            ],
+            "cubes": [
+              {
+                "origin": [
+                  3,
+                  -4,
+                  -4
+                ],
+                "size": [
+                  3,
+                  5,
+                  0
+                ],
+                "uv": [
+                  2,
+                  13
+                ]
+              }
+            ]
+          },
+          {
+            "name": "left_leg",
+            "parent": "body",
+            "pivot": [
+              4,
+              1,
+              4
+            ],
+            "rotation": [
+              0,
+              -90,
+              0
+            ],
+            "cubes": [
+              {
+                "origin": [
+                  2,
+                  -4,
+                  4
+                ],
+                "size": [
+                  3,
+                  5,
+                  0
+                ],
+                "uv": [
+                  2,
+                  13
+                ]
+              }
+            ]
+          },
+          {
+            "name": "tail",
+            "parent": "body",
+            "pivot": [
+              0,
+              2,
+              4
+            ],
+            "cubes": [
+              {
+                "origin": [
+                  0,
+                  0,
+                  4
+                ],
+                "size": [
+                  0,
+                  5,
+                  12
+                ],
+                "uv": [
+                  2,
+                  19
+                ]
+              }
+            ]
+          },
+          {
+            "name": "head",
+            "parent": "body",
+            "pivot": [
+              0,
+              2,
+              -5
+            ],
+            "cubes": [
+              {
+                "origin": [
+                  -4,
+                  0,
+                  -10
+                ],
+                "size": [
+                  8,
+                  5,
+                  5
+                ],
+                "uv": [
+                  0,
+                  1
+                ]
+              }
+            ]
+          },
+          {
+            "name": "left_gills",
+            "parent": "head",
+            "pivot": [
+              4,
+              2,
+              -6
+            ],
+            "cubes": [
+              {
+                "origin": [
+                  4,
+                  0,
+                  -6
+                ],
+                "size": [
+                  3,
+                  7,
+                  0
+                ],
+                "uv": [
+                  11,
+                  40
+                ]
+              }
+            ]
+          },
+          {
+            "name": "right_gills",
+            "parent": "head",
+            "pivot": [
+              -4,
+              2,
+              -6
+            ],
+            "cubes": [
+              {
+                "origin": [
+                  -7,
+                  0,
+                  -6
+                ],
+                "size": [
+                  3,
+                  7,
+                  0
+                ],
+                "uv": [
+                  0,
+                  40
+                ]
+              }
+            ]
+          },
+          {
+            "name": "top_gills",
+            "parent": "head",
+            "pivot": [
+              0,
+              5,
+              -6
+            ],
+            "cubes": [
+              {
+                "origin": [
+                  -4,
+                  5,
+                  -6
+                ],
+                "size": [
+                  8,
+                  3,
+                  0
+                ],
+                "uv": [
+                  3,
+                  37
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "player": {
+    "identifier": "minecraft:player",
+    "materials": {
+      "default": "entity_alphatest",
+      "cape": "entity_alphatest",
+      "animated": "player_animated"
+    },
+    "textures": {
+      "default": "textures/entity/steve"
+    },
+    "geometry": {
+      "default": {
+        "visible_bounds_width": 1,
+        "visible_bounds_height": 2,
+        "visible_bounds_offset": [
+          0,
+          1,
+          0
+        ],
+        "bones": [
+          {
+            "name": "root",
+            "pivot": [
+              0,
+              0,
+              0
+            ]
+          },
+          {
+            "name": "body",
+            "parent": "waist",
+            "pivot": [
+              0,
+              24,
+              0
+            ],
+            "cubes": [
+              {
+                "origin": [
+                  -4,
+                  12,
+                  -2
+                ],
+                "size": [
+                  8,
+                  12,
+                  4
+                ],
+                "uv": [
+                  16,
+                  16
+                ]
+              }
+            ]
+          },
+          {
+            "name": "waist",
+            "parent": "root",
+            "pivot": [
+              0,
+              12,
+              0
+            ]
+          },
+          {
+            "name": "head",
+            "parent": "body",
+            "pivot": [
+              0,
+              24,
+              0
+            ],
+            "cubes": [
+              {
+                "origin": [
+                  -4,
+                  24,
+                  -4
+                ],
+                "size": [
+                  8,
+                  8,
+                  8
+                ],
+                "uv": [
+                  0,
+                  0
+                ]
+              }
+            ]
+          },
+          {
+            "name": "cape",
+            "pivot": [
+              0,
+              24,
+              3
+            ],
+            "parent": "body"
+          },
+          {
+            "name": "hat",
+            "parent": "head",
+            "pivot": [
+              0,
+              24,
+              0
+            ],
+            "cubes": [
+              {
+                "origin": [
+                  -4,
+                  24,
+                  -4
+                ],
+                "size": [
+                  8,
+                  8,
+                  8
+                ],
+                "uv": [
+                  32,
+                  0
+                ],
+                "inflate": 0.5
+              }
+            ]
+          },
+          {
+            "name": "leftArm",
+            "parent": "body",
+            "pivot": [
+              5,
+              22,
+              0
+            ],
+            "cubes": [
+              {
+                "origin": [
+                  4,
+                  12,
+                  -2
+                ],
+                "size": [
+                  4,
+                  12,
+                  4
+                ],
+                "uv": [
+                  32,
+                  48
+                ]
+              }
+            ]
+          },
+          {
+            "name": "leftSleeve",
+            "parent": "leftArm",
+            "pivot": [
+              5,
+              22,
+              0
+            ],
+            "cubes": [
+              {
+                "origin": [
+                  4,
+                  12,
+                  -2
+                ],
+                "size": [
+                  4,
+                  12,
+                  4
+                ],
+                "uv": [
+                  48,
+                  48
+                ],
+                "inflate": 0.25
+              }
+            ]
+          },
+          {
+            "name": "leftItem",
+            "pivot": [
+              6,
+              15,
+              1
+            ],
+            "parent": "leftArm"
+          },
+          {
+            "name": "rightArm",
+            "parent": "body",
+            "pivot": [
+              -5,
+              22,
+              0
+            ],
+            "cubes": [
+              {
+                "origin": [
+                  -8,
+                  12,
+                  -2
+                ],
+                "size": [
+                  4,
+                  12,
+                  4
+                ],
+                "uv": [
+                  40,
+                  16
+                ]
+              }
+            ]
+          },
+          {
+            "name": "rightSleeve",
+            "parent": "rightArm",
+            "pivot": [
+              -5,
+              22,
+              0
+            ],
+            "cubes": [
+              {
+                "origin": [
+                  -8,
+                  12,
+                  -2
+                ],
+                "size": [
+                  4,
+                  12,
+                  4
+                ],
+                "uv": [
+                  40,
+                  32
+                ],
+                "inflate": 0.25
+              }
+            ]
+          },
+          {
+            "name": "rightItem",
+            "pivot": [
+              -6,
+              15,
+              1
+            ],
+            "locators": {
+              "lead_hold": [
+                -6,
+                15,
+                1
+              ]
+            },
+            "parent": "rightArm"
+          },
+          {
+            "name": "leftLeg",
+            "parent": "root",
+            "pivot": [
+              1.9,
+              12,
+              0
+            ],
+            "cubes": [
+              {
+                "origin": [
+                  -0.1,
+                  0,
+                  -2
+                ],
+                "size": [
+                  4,
+                  12,
+                  4
+                ],
+                "uv": [
+                  16,
+                  48
+                ]
+              }
+            ]
+          },
+          {
+            "name": "leftPants",
+            "parent": "leftLeg",
+            "pivot": [
+              1.9,
+              12,
+              0
+            ],
+            "cubes": [
+              {
+                "origin": [
+                  -0.1,
+                  0,
+                  -2
+                ],
+                "size": [
+                  4,
+                  12,
+                  4
+                ],
+                "uv": [
+                  0,
+                  48
+                ],
+                "inflate": 0.25
+              }
+            ]
+          },
+          {
+            "name": "rightLeg",
+            "parent": "root",
+            "pivot": [
+              -1.9,
+              12,
+              0
+            ],
+            "cubes": [
+              {
+                "origin": [
+                  -3.9,
+                  0,
+                  -2
+                ],
+                "size": [
+                  4,
+                  12,
+                  4
+                ],
+                "uv": [
+                  0,
+                  16
+                ]
+              }
+            ]
+          },
+          {
+            "name": "rightPants",
+            "parent": "rightLeg",
+            "pivot": [
+              -1.9,
+              12,
+              0
+            ],
+            "cubes": [
+              {
+                "origin": [
+                  -3.9,
+                  0,
+                  -2
+                ],
+                "size": [
+                  4,
+                  12,
+                  4
+                ],
+                "uv": [
+                  0,
+                  32
+                ],
+                "inflate": 0.25
+              }
+            ]
+          },
+          {
+            "name": "jacket",
+            "parent": "body",
+            "pivot": [
+              0,
+              24,
+              0
+            ],
+            "cubes": [
+              {
+                "origin": [
+                  -4,
+                  12,
+                  -2
+                ],
+                "size": [
+                  8,
+                  12,
+                  4
+                ],
+                "uv": [
+                  16,
+                  32
+                ],
+                "inflate": 0.25
+              }
+            ]
+          }
+        ],
+        "texturewidth": 64,
+        "textureheight": 64
+      },
+      "cape": {
+        "texturewidth": 64,
+        "textureheight": 32,
+        "bones": [
+          {
+            "name": "root",
+            "pivot": [
+              0,
+              0,
+              0
+            ]
+          },
+          {
+            "name": "body",
+            "pivot": [
+              0,
+              24,
+              0
+            ],
+            "parent": "waist"
+          },
+          {
+            "name": "waist",
+            "parent": "root",
+            "neverRender": true,
+            "pivot": [
+              0,
+              12,
+              0
+            ]
+          },
+          {
+            "name": "cape",
+            "parent": "body",
+            "pivot": [
+              0,
+              24,
+              3
+            ],
+            "bind_pose_rotation": [
+              6,
+              180,
+              0
+            ],
+            "rotation": [
+              6,
+              180,
+              0
+            ],
+            "cubes": [
+              {
+                "origin": [
+                  -5,
+                  8,
+                  3
+                ],
+                "size": [
+                  10,
+                  16,
+                  1
+                ],
+                "uv": [
+                  0,
+                  0
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    },
+    "scripts": {
+      "scale": "0.9375",
+      "initialize": [
+        "variable.is_holding_right = 0.0;",
+        "variable.is_blinking = 0.0;",
+        "variable.last_blink_time = 0.0;",
+        "variable.hand_bob = 0.0;"
+      ],
+      "pre_animation": [
+        "variable.helmet_layer_visible = 1.0;",
+        "variable.leg_layer_visible = 1.0;",
+        "variable.boot_layer_visible = 1.0;",
+        "variable.chest_layer_visible = 1.0;",
+        "variable.attack_body_rot_y = Math.sin(360*Math.sqrt(variable.attack_time)) * 5.0;",
+        "variable.tcos0 = (math.cos(query.modified_distance_moved * 38.17) * query.modified_move_speed / variable.gliding_speed_value) * 57.3;",
+        "variable.first_person_rotation_factor = math.sin((1 - variable.attack_time) * 180.0);",
+        "variable.hand_bob = query.life_time < 0.01 ? 0.0 : variable.hand_bob + ((query.is_on_ground && query.is_alive ? math.clamp(math.sqrt(math.pow(query.position_delta(0), 2.0) + math.pow(query.position_delta(2), 2.0)), 0.0, 0.1) : 0.0) - variable.hand_bob) * 0.02;",
+        "variable.map_angle = math.clamp(1 - variable.player_x_rotation / 45.1, 0.0, 1.0);",
+        "variable.item_use_normalized = query.main_hand_item_use_duration / query.main_hand_item_max_duration;"
+      ],
+      "animate": [
+        "root"
+      ]
+    },
+    "animations": {
+      "humanoid_base_pose": {
+        "loop": true,
+        "bones": {
+          "waist": {
+            "rotation": [
+              0,
+              0,
+              0
+            ]
+          }
+        }
+      },
+      "look_at_target_ui": {
+        "loop": true,
+        "bones": {
+          "head": {
+            "rotation": [
+              "query.target_x_rotation",
+              "query.target_y_rotation",
+              0
+            ]
+          }
+        }
+      },
+      "look_at_target_default": {
+        "loop": true,
+        "bones": {
+          "head": {
+            "relative_to": {
+              "rotation": "entity"
+            },
+            "rotation": [
+              "query.target_x_rotation",
+              "query.target_y_rotation",
+              0
+            ]
+          }
+        }
+      },
+      "look_at_target_gliding": {
+        "loop": true,
+        "bones": {
+          "head": {
+            "rotation": [
+              -45,
+              "query.target_y_rotation",
+              0
+            ]
+          }
+        }
+      },
+      "look_at_target_swimming": {
+        "loop": true,
+        "bones": {
+          "head": {
+            "rotation": [
+              "math.lerp(query.target_x_rotation, -45.0, variable.swim_amount)",
+              "query.target_y_rotation",
+              0
+            ]
+          }
+        }
+      },
+      "look_at_target_inverted": {
+        "loop": true,
+        "bones": {
+          "head": {
+            "rotation": [
+              "-query.target_x_rotation",
+              "-query.target_y_rotation",
+              0
+            ]
+          }
+        }
+      },
+      "cape": {
+        "loop": true,
+        "bones": {
+          "cape": {
+            "position": [
+              0,
+              "query.get_root_locator_offset('armor_offset.default_neck', 1)",
+              0
+            ],
+            "rotation": [
+              "math.lerp(0.0, -126.0, query.cape_flap_amount) - 6.0",
+              0,
+              0
+            ]
+          }
+        }
+      },
+      "move.arms": {
+        "loop": true,
+        "bones": {
+          "leftarm": {
+            "rotation": [
+              "variable.tcos0",
+              0,
+              0
+            ]
+          },
+          "rightarm": {
+            "rotation": [
+              "-variable.tcos0",
+              0,
+              0
+            ]
+          }
+        }
+      },
+      "move.legs": {
+        "loop": true,
+        "bones": {
+          "leftleg": {
+            "rotation": [
+              "variable.tcos0 * -1.4",
+              0,
+              0
+            ]
+          },
+          "rightleg": {
+            "rotation": [
+              "variable.tcos0 * 1.4",
+              0,
+              0
+            ]
+          }
+        }
+      },
+      "swimming": {
+        "animation_length": 1.3,
+        "loop": true,
+        "override_previous_animation": true,
+        "bones": {
+          "leftarm": {
+            "rotation": {
+              "0": [
+                0,
+                180,
+                180
+              ],
+              "0.7": [
+                0,
+                180,
+                287.2
+              ],
+              "1.1": [
+                90,
+                180,
+                180
+              ],
+              "1.3": [
+                0,
+                180,
+                180
+              ]
+            }
+          },
+          "rightarm": {
+            "rotation": {
+              "0": [
+                0,
+                180,
+                -180
+              ],
+              "0.7": [
+                0,
+                180,
+                -287.2
+              ],
+              "1.1": [
+                90,
+                180,
+                -180
+              ],
+              "1.3": [
+                0,
+                180,
+                -180
+              ]
+            }
+          },
+          "root": {
+            "position": [
+              0,
+              "(math.sin(query.target_x_rotation) * 24.0 + 3.0) * variable.swim_amount",
+              "(math.cos(query.target_x_rotation) * 24.0 + 9.0) * variable.swim_amount"
+            ],
+            "rotation": [
+              "variable.swim_amount * (90 + query.target_x_rotation)",
+              0,
+              0
+            ]
+          }
+        }
+      },
+      "swimming.legs": {
+        "loop": true,
+        "override_previous_animation": true,
+        "bones": {
+          "leftleg": {
+            "rotation": [
+              "math.lerp(0.0, math.cos(query.life_time * 390.0 + 180.0) * 17.2, variable.swim_amount)",
+              0,
+              0
+            ]
+          },
+          "rightleg": {
+            "rotation": [
+              "math.lerp(0.0, math.cos(query.life_time * 390.0) * 17.2, variable.swim_amount)",
+              0,
+              0
+            ]
+          }
+        }
+      },
+      "riding.arms": {
+        "loop": true,
+        "bones": {
+          "leftarm": {
+            "rotation": [
+              -36,
+              0,
+              0
+            ]
+          },
+          "rightarm": {
+            "rotation": [
+              -36,
+              0,
+              0
+            ]
+          }
+        }
+      },
+      "riding.legs": {
+        "loop": true,
+        "bones": {
+          "leftleg": {
+            "rotation": [
+              "-72.0 - this",
+              "-18.0 - this",
+              "-this"
+            ]
+          },
+          "rightleg": {
+            "rotation": [
+              "-72.0 - this",
+              "18.0 - this",
+              "-this"
+            ]
+          }
+        }
+      },
+      "holding": {
+        "loop": true,
+        "bones": {
+          "leftarm": {
+            "rotation": [
+              "variable.is_holding_left ? (-this * 0.5 - 18.0) : 0.0",
+              0,
+              0
+            ]
+          },
+          "rightarm": {
+            "rotation": [
+              "variable.is_holding_right ? (-this * 0.5 - 18.0) : 0.0",
+              0,
+              0
+            ]
+          }
+        }
+      },
+      "brandish_spear": {
+        "loop": true,
+        "bones": {
+          "rightarm": {
+            "rotation": [
+              "this * -0.5 - 157.5 - 22.5 * variable.charge_amount",
+              "-this",
+              0
+            ]
+          }
+        }
+      },
+      "charging": {
+        "loop": true,
+        "bones": {
+          "rightarm": {
+            "rotation": [
+              "22.5 * variable.charge_amount - this",
+              "-this",
+              0
+            ]
+          }
+        }
+      },
+      "attack.positions": {
+        "loop": true,
+        "bones": {
+          "head": {
+            "rotation": [
+              0,
+              0,
+              0
+            ]
+          }
+        }
+      },
+      "attack.rotations": {
+        "loop": true,
+        "bones": {
+          "body": {
+            "rotation": [
+              0,
+              "variable.attack_body_rot_y",
+              0
+            ]
+          },
+          "leftarm": {
+            "rotation": [
+              "-(math.sin((1 - math.pow((1 - variable.attack_time), 4)) * 180) * 1.2 + math.sin(variable.attack_time * 180)) * 10.0",
+              0,
+              0
+            ]
+          },
+          "rightarm": {
+            "rotation": [
+              "-(math.sin((1 - math.pow((1 - variable.attack_time), 4)) * 180) * 1.2 + math.sin(variable.attack_time * 180)) * 30.0",
+              "-(math.sin((1 - math.pow((1 - variable.attack_time), 4)) * 180) ? (-90.0 * math.sin((1 - math.pow((1 - variable.attack_time), 4)) * 180)) + 30.0 : 0.0)",
+              0
+            ]
+          }
+        }
+      },
+      "sneaking": {
+        "loop": true,
+        "bones": {
+          "body": {
+            "position": [
+              0,
+              -2,
+              0
+            ]
+          },
+          "head": {
+            "position": [
+              0,
+              -1,
+              0
+            ]
+          },
+          "leftarm": {
+            "rotation": [
+              -5.7,
+              0,
+              0
+            ]
+          },
+          "leftleg": {
+            "rotation": [
+              -28,
+              0,
+              0
+            ]
+          },
+          "rightarm": {
+            "rotation": [
+              -5.7,
+              0,
+              0
+            ]
+          },
+          "rightleg": {
+            "rotation": [
+              -28,
+              0,
+              0
+            ]
+          },
+          "root": {
+            "position": [
+              0,
+              1.25,
+              9
+            ],
+            "rotation": [
+              "28.0 - this",
+              0,
+              0
+            ]
+          }
+        }
+      },
+      "bob": {
+        "loop": true,
+        "bones": {
+          "leftarm": {
+            "rotation": [
+              0,
+              0,
+              "-((math.cos(query.life_time * 103.2) * 2.865) + 2.865)"
+            ]
+          },
+          "rightarm": {
+            "rotation": [
+              0,
+              0,
+              "(math.cos(query.life_time * 103.2) * 2.865) + 2.865"
+            ]
+          }
+        }
+      },
+      "damage_nearby_mobs": {
+        "loop": true,
+        "bones": {
+          "leftarm": {
+            "rotation": [
+              "-45.0-this",
+              "-this",
+              "-this"
+            ]
+          },
+          "leftleg": {
+            "rotation": [
+              "45.0-this",
+              "-this",
+              "-this"
+            ]
+          },
+          "rightarm": {
+            "rotation": [
+              "45.0-this",
+              "-this",
+              "-this"
+            ]
+          },
+          "rightleg": {
+            "rotation": [
+              "-45.0-this",
+              "-this",
+              "-this"
+            ]
+          }
+        }
+      },
+      "fishing_rod": {
+        "loop": true,
+        "bones": {
+          "rightarm": {
+            "rotation": [
+              " -19.0 - this",
+              "-this",
+              "-this"
+            ]
+          }
+        }
+      },
+      "use_item_progress": {
+        "loop": true,
+        "bones": {
+          "rightarm": {
+            "rotation": [
+              "variable.use_item_startup_progress * -60.0 + variable.use_item_interval_progress * 11.25",
+              "variable.use_item_startup_progress * -22.5 + variable.use_item_interval_progress * 11.25",
+              "variable.use_item_startup_progress * -5.625 + variable.use_item_interval_progress * 11.25"
+            ]
+          }
+        }
+      },
+      "skeleton_attack": {
+        "loop": true,
+        "bones": {
+          "leftarm": {
+            "rotation": [
+              "-68.75 * math.sin(variable.attack_time * 180.0) + 22.92 * (math.sin((1.0 - (1.0 - variable.attack_time) * (1.0 - variable.attack_time)) * 180.0))",
+              "5.73 - math.sin(variable.attack_time * 180.0) * 34.38 - this",
+              "-this"
+            ]
+          },
+          "rightarm": {
+            "rotation": [
+              "-68.75 * math.sin(variable.attack_time * 180.0) + 22.92 * (math.sin((1.0 - (1.0 - variable.attack_time) * (1.0 - variable.attack_time)) * 180.0))",
+              "-5.73 + math.sin(variable.attack_time * 180.0) * 34.38 - this",
+              "-this"
+            ]
+          }
+        }
+      },
+      "sleeping": {
+        "loop": true,
+        "override_previous_animation": true,
+        "bones": {
+          "head": {
+            "rotation": [
+              "30.0 - this",
+              "-this",
+              "-this"
+            ]
+          },
+          "root": {
+            "position": [
+              "24.0 * math.cos(query.body_y_rotation) * math.cos(query.sleep_rotation) - 24.0 * math.sin(query.body_y_rotation) * math.sin(query.sleep_rotation)",
+              0,
+              "24.0 * math.cos(query.body_y_rotation) * math.sin(query.sleep_rotation) + 24.0 * math.sin(query.body_y_rotation) * math.cos(query.sleep_rotation)"
+            ],
+            "rotation": [
+              -90,
+              "270.0 - query.sleep_rotation - query.body_y_rotation",
+              0
+            ]
+          }
+        }
+      },
+      "first_person_base_pose": {
+        "loop": true,
+        "bones": {
+          "body": {
+            "rotation": [
+              "query.target_x_rotation",
+              "query.target_y_rotation",
+              0
+            ]
+          }
+        }
+      },
+      "first_person_empty_hand": {
+        "loop": true,
+        "bones": {
+          "rightarm": {
+            "position": [
+              13.5,
+              -10,
+              12
+            ],
+            "rotation": [
+              "95.0 + variable.is_using_vr * 7.5",
+              "-45.0 + variable.is_using_vr * 7.5",
+              "115.0 + variable.is_using_vr * -2.5"
+            ]
+          }
+        }
+      },
+      "first_person_swap_item": {
+        "loop": true,
+        "bones": {
+          "leftarm": {
+            "position": [
+              0,
+              "query.get_equipped_item_name('off_hand') == 'map' ? 0.0 : -10.0 * (1.0 - variable.player_arm_height)",
+              0
+            ]
+          },
+          "rightarm": {
+            "position": [
+              0,
+              "-10.0 * (1.0 - variable.player_arm_height)",
+              0
+            ]
+          }
+        }
+      },
+      "first_person_attack_rotation": {
+        "loop": true,
+        "bones": {
+          "rightarm": {
+            "position": [
+              "math.clamp(-15.5 * math.sin(variable.first_person_rotation_factor * variable.attack_time * 112.0), -7.0, 999.0) * math.sin(variable.first_person_rotation_factor * variable.attack_time * 112.0)",
+              "math.sin(variable.first_person_rotation_factor * (1.0 - variable.attack_time) * (1.0 - variable.attack_time) * 200.0) * 7.5 - variable.first_person_rotation_factor * variable.attack_time * 15.0 + variable.short_arm_offset_right",
+              "math.sin(variable.first_person_rotation_factor * variable.attack_time * 120.0) * 1.75"
+            ],
+            "rotation": [
+              "math.sin(variable.first_person_rotation_factor * (1.0 - variable.attack_time) * (1.0 - variable.attack_time) * 280.0) * -60.0",
+              "math.sin(variable.first_person_rotation_factor * (1.0 - variable.attack_time) * (1.0 - variable.attack_time) * 280.0) * 40.0",
+              "math.sin(variable.first_person_rotation_factor * (1.0 - variable.attack_time) * (1.0 - variable.attack_time) * 280.0) * 20.0"
+            ]
+          }
+        }
+      },
+      "first_person_vr_attack_rotation": {
+        "loop": true,
+        "bones": {
+          "rightarm": {
+            "position": [
+              "5.0 * math.sin(variable.first_person_rotation_factor * variable.attack_time * 112.0)",
+              "(math.sin(variable.first_person_rotation_factor * (1.0 - variable.attack_time) * (1.0 - variable.attack_time) * 200.0) - 0.8) * 8.75 + 5.0",
+              "math.sin(variable.first_person_rotation_factor * variable.attack_time * 120.0) * 15.0"
+            ],
+            "rotation": [
+              "30.7 * math.sin(variable.first_person_rotation_factor * variable.attack_time * -180.0 - 45.0) * 1.5",
+              0,
+              "21.8 * math.sin(variable.first_person_rotation_factor * variable.attack_time * 200.0 + 30.0) * 1.25"
+            ]
+          }
+        }
+      },
+      "first_person_map_hold": {
+        "loop": true,
+        "bones": {
+          "leftarm": {
+            "position": [
+              "-16.250 + variable.is_vertical_splitscreen * 7.0",
+              "-10.75 - variable.map_angle * 8.0 + variable.is_vertical_splitscreen * 0.6 - variable.short_arm_offset_left",
+              "9.0 - variable.map_angle * 8.0 + variable.short_arm_offset_left"
+            ],
+            "rotation": [
+              40,
+              -20,
+              -155
+            ],
+            "scale": [
+              1.15,
+              1.15,
+              1.15
+            ]
+          },
+          "rightarm": {
+            "position": [
+              "12.50 + variable.is_vertical_splitscreen * 1.75",
+              "-7.5 - variable.map_angle * 8.0 + variable.is_vertical_splitscreen * 0.5 - variable.short_arm_offset_right",
+              "5.25 - variable.map_angle * 8.0 + variable.short_arm_offset_right"
+            ],
+            "rotation": [
+              77.5,
+              7.5,
+              160
+            ]
+          }
+        }
+      },
+      "first_person_map_hold_attack": {
+        "loop": true,
+        "bones": {
+          "leftarm": {
+            "position": [
+              "math.sin(variable.first_person_rotation_factor * variable.attack_time * 112.0) * -10.75",
+              "math.sin(variable.first_person_rotation_factor * (1.0 - variable.attack_time) * (1.0 - variable.attack_time) * 200.0) * 3.75 - variable.first_person_rotation_factor * variable.attack_time * 1.25 + variable.short_arm_offset_left",
+              "math.sin(variable.first_person_rotation_factor * variable.attack_time * 120.0) * 5.75"
+            ],
+            "rotation": [
+              "variable.map_angle * 90.0",
+              "-15.0 * math.sin(variable.first_person_rotation_factor * (1.0 - variable.attack_time) * -100.0)",
+              0
+            ]
+          },
+          "rightarm": {
+            "position": [
+              "math.sin(variable.first_person_rotation_factor * variable.attack_time * 112.0) * -6.25",
+              "math.sin(variable.first_person_rotation_factor * (1.0 - variable.attack_time) * (1.0 - variable.attack_time) * 200.0) * 1.75 + variable.short_arm_offset_right",
+              "math.sin(variable.first_person_rotation_factor * variable.attack_time * 120.0) * 5.25"
+            ],
+            "rotation": [
+              "variable.map_angle * 90.0",
+              0,
+              0
+            ]
+          }
+        }
+      },
+      "first_person_map_hold_off_hand": {
+        "loop": true,
+        "bones": {
+          "leftarm": {
+            "position": [
+              "-14.50 + variable.is_horizontal_splitscreen * 2.0 + variable.is_vertical_splitscreen * 8.7",
+              "-8.250 + variable.short_arm_offset_left",
+              "11.50 + variable.is_horizontal_splitscreen * 0.5"
+            ],
+            "rotation": [
+              195,
+              182.5,
+              2.5
+            ],
+            "scale": [
+              0.75,
+              0.75,
+              0.75
+            ]
+          }
+        }
+      },
+      "first_person_map_hold_main_hand": {
+        "loop": true,
+        "bones": {
+          "rightarm": {
+            "position": [
+              "14.50 - variable.is_vertical_splitscreen * 0.75",
+              "-8.25 + variable.short_arm_offset_right + math.sin(variable.first_person_rotation_factor * (1.0 - variable.attack_time) * (1.0 - variable.attack_time) * 200.0) * 2.75 - variable.first_person_rotation_factor * variable.attack_time * 3.0 - variable.is_horizontal_splitscreen",
+              "11.5 + math.sin(variable.first_person_rotation_factor * variable.attack_time * 120.0) * 3.5 + variable.is_horizontal_splitscreen * 3.5"
+            ],
+            "rotation": [
+              195,
+              182.5,
+              -5
+            ],
+            "scale": [
+              0.75,
+              0.75,
+              0.75
+            ]
+          }
+        }
+      },
+      "first_person_crossbow_equipped": {
+        "loop": true,
+        "override_previous_animation": true,
+        "bones": {
+          "leftarm": {
+            "position": [
+              "1.5 - variable.item_use_normalized * 3.5",
+              "-3.799999952316284 + variable.short_arm_offset_left",
+              "8.25 - (1 - variable.item_use_normalized)"
+            ],
+            "rotation": [
+              165,
+              -60,
+              45
+            ],
+            "scale": [
+              0.4,
+              0.4,
+              0.4
+            ]
+          }
+        }
+      },
+      "third_person_crossbow_equipped": {
+        "loop": true,
+        "bones": {
+          "leftarm": {
+            "position": [
+              0,
+              0,
+              0.5
+            ],
+            "rotation": [
+              "-this - 65.0 - (1.0 - variable.item_use_normalized) * 5.0",
+              "-this + (1.0 - variable.item_use_normalized) * 30.0",
+              "-this + 20.0 + (1.0 - variable.item_use_normalized) * 10.0"
+            ]
+          },
+          "rightarm": {
+            "rotation": [
+              "- 60.0 - this",
+              "- 45.0 - this",
+              "- 2.5 - this"
+            ]
+          }
+        }
+      },
+      "third_person_bow_equipped": {
+        "loop": true,
+        "bones": {
+          "leftarm": {
+            "rotation": [
+              "-90.0 + query.target_x_rotation - query.is_sneaking * 15.0 - this",
+              "27.5 + query.target_y_rotation",
+              0
+            ]
+          },
+          "rightarm": {
+            "rotation": [
+              "-90.0 + query.target_x_rotation - query.is_sneaking * 15.0 - this",
+              "-5.0 + query.target_y_rotation",
+              0
+            ]
+          },
+          "rightitem": {
+            "rotation": [
+              0,
+              -10,
+              0
+            ]
+          }
+        }
+      },
+      "crossbow_hold": {
+        "loop": true,
+        "bones": {
+          "leftarm": {
+            "rotation": [
+              "query.is_swimming ? 0.0 : -93.0 + query.target_x_rotation - query.is_sneaking * 27.0 -this",
+              "query.is_swimming ? 0.0 : 42.0 + math.clamp(query.target_y_rotation, -45.0, 5.0) -this",
+              "query.is_sneaking * -15.0"
+            ]
+          },
+          "rightarm": {
+            "rotation": [
+              "query.is_swimming ? 0.0 : -93.0 + query.target_x_rotation - query.is_sneaking * 27.0 -this",
+              "query.is_swimming ? 0.0 : math.clamp(query.target_y_rotation, -60.0, 45.0) -this",
+              0
+            ]
+          }
+        }
+      },
+      "shield_block_main_hand": {
+        "loop": true,
+        "bones": {
+          "rightarm": {
+            "rotation": [
+              -20,
+              -30,
+              -25
+            ]
+          },
+          "rightitem": {
+            "position": [
+              -1,
+              -3,
+              0
+            ],
+            "rotation": [
+              0,
+              -60,
+              -45
+            ]
+          }
+        }
+      },
+      "shield_block_off_hand": {
+        "loop": true,
+        "bones": {
+          "leftarm": {
+            "rotation": [
+              -20,
+              20,
+              20
+            ]
+          },
+          "leftitem": {
+            "position": [
+              "1.0 + query.item_is_charged * 1.5",
+              "-3.0 + query.item_is_charged",
+              0
+            ],
+            "rotation": [
+              "query.item_is_charged * 30.0",
+              "70.0 - query.item_is_charged * 60.0",
+              "65.0 - query.item_is_charged * 15.0"
+            ]
+          }
+        }
+      }
+    },
+    "render_controllers": [
+      {
+        "controller.render.player.first_person": "variable.is_first_person"
+      },
+      {
+        "controller.render.player.third_person": "!variable.is_first_person && !variable.map_face_icon"
+      },
+      {
+        "controller.render.player.map": "variable.map_face_icon"
+      }
+    ],
+    "enable_attachables": true,
+    "animation_controllers": {
+      "root": {
+        "initial_state": "first_person",
+        "states": {
+          "first_person": {
+            "animations": [
+              "first_person_swap_item",
+              {
+                "first_person_attack_controller": "variable.attack_time > 0.0f && query.get_equipped_item_name != 'map'"
+              },
+              "first_person_base_pose",
+              {
+                "first_person_empty_hand": "query.get_equipped_item_name(0, 1) != 'map'"
+              },
+              {
+                "first_person_map_controller": "(query.get_equipped_item_name(0, 1) == 'map' || query.get_equipped_item_name('off_hand') == 'map')"
+              },
+              {
+                "first_person_crossbow_equipped": "query.get_equipped_item_name == 'crossbow' && (variable.item_use_normalized > 0 && variable.item_use_normalized < 1.0)"
+              }
+            ],
+            "transitions": [
+              {
+                "paperdoll": "variable.is_paperdoll"
+              },
+              {
+                "map_player": "variable.map_face_icon"
+              },
+              {
+                "third_person": "!variable.is_first_person"
+              }
+            ]
+          },
+          "map_player": {
+            "transitions": [
+              {
+                "paperdoll": "variable.is_paperdoll"
+              },
+              {
+                "first_person": "variable.is_first_person"
+              },
+              {
+                "third_person": "!variable.map_face_icon && !variable.is_first_person"
+              }
+            ]
+          },
+          "paperdoll": {
+            "animations": [
+              "humanoid_base_pose",
+              {
+                "look_at_target_ui": "variable.should_look_at_target_ui"
+              },
+              "move.arms",
+              "move.legs",
+              "cape"
+            ],
+            "transitions": [
+              {
+                "first_person": "!variable.is_paperdoll && variable.is_first_person"
+              },
+              {
+                "map_player": "variable.map_face_icon"
+              },
+              {
+                "third_person": "!variable.is_paperdoll && !variable.is_first_person"
+              }
+            ]
+          },
+          "third_person": {
+            "animations": [
+              "humanoid_base_pose",
+              {
+                "look_at_target": "!query.is_sleeping && !query.is_emoting"
+              },
+              "move.arms",
+              "move.legs",
+              "cape",
+              {
+                "riding.arms": "query.is_riding"
+              },
+              {
+                "riding.legs": "query.is_riding"
+              },
+              "holding",
+              {
+                "brandish_spear": "variable.is_brandishing_spear"
+              },
+              {
+                "charging": "query.is_charging"
+              },
+              {
+                "sneaking": "query.is_sneaking && !query.is_sleeping"
+              },
+              "bob",
+              {
+                "damage_nearby_mobs": "variable.damage_nearby_mobs"
+              },
+              {
+                "swimming": "variable.swim_amount > 0.0"
+              },
+              {
+                "swimming.legs": "variable.swim_amount > 0.0"
+              },
+              {
+                "use_item_progress": "( variable.use_item_interval_progress > 0.0 ) || ( variable.use_item_startup_progress > 0.0 ) && !variable.is_brandishing_spear"
+              },
+              {
+                "fishing_rod": "query.get_equipped_item_name == 'fishing_rod'"
+              },
+              {
+                "sleeping": "query.is_sleeping && query.is_alive"
+              },
+              {
+                "attack.positions": "variable.attack_time >= 0.0"
+              },
+              {
+                "attack.rotations": "variable.attack_time >= 0.0"
+              },
+              {
+                "shield_block_main_hand": "query.blocking && query.get_equipped_item_name('off_hand') != 'shield' && query.get_equipped_item_name == 'shield'"
+              },
+              {
+                "shield_block_off_hand": "query.blocking && query.get_equipped_item_name('off_hand') == 'shield' && !(variable.item_use_normalized > 0 && variable.item_use_normalized < 1.0)"
+              },
+              {
+                "crossbow_controller": "query.get_equipped_item_name == 'crossbow'"
+              },
+              {
+                "third_person_bow_equipped": "query.get_equipped_item_name == 'bow' && (variable.item_use_normalized > 0 && variable.item_use_normalized < 1.0)"
+              }
+            ],
+            "transitions": [
+              {
+                "paperdoll": "variable.is_paperdoll"
+              },
+              {
+                "first_person": "variable.is_first_person"
+              },
+              {
+                "map_player": "variable.map_face_icon"
+              }
+            ]
+          }
+        }
+      },
+      "base_controller": "controller.animation.player.base",
+      "hudplayer": {
+        "initial_state": "default",
+        "states": {
+          "default": {
+            "animations": [
+              "humanoid_base_pose",
+              {
+                "look_at_target": "!query.is_sleeping && !query.is_emoting"
+              },
+              "move.arms",
+              "move.legs",
+              "cape",
+              {
+                "riding.arms": "query.is_riding"
+              },
+              {
+                "riding.legs": "query.is_riding"
+              },
+              "holding",
+              {
+                "brandish_spear": "variable.is_brandishing_spear"
+              },
+              {
+                "charging": "query.is_charging"
+              },
+              {
+                "sneaking": "query.is_sneaking && !query.is_sleeping"
+              },
+              "bob",
+              {
+                "damage_nearby_mobs": "variable.damage_nearby_mobs"
+              },
+              {
+                "swimming": "variable.swim_amount > 0.0"
+              },
+              {
+                "swimming.legs": "variable.swim_amount > 0.0"
+              },
+              {
+                "use_item_progress": "( variable.use_item_interval_progress > 0.0 ) || ( variable.use_item_startup_progress > 0.0 ) && !variable.is_brandishing_spear"
+              },
+              {
+                "sleeping": "query.is_sleeping && query.is_alive"
+              },
+              {
+                "attack.positions": "variable.attack_time >= 0.0"
+              },
+              {
+                "attack.rotations": "variable.attack_time >= 0.0"
+              },
+              {
+                "shield_block_main_hand": "query.blocking && query.get_equipped_item_name('off_hand') != 'shield' && query.get_equipped_item_name == 'shield'"
+              },
+              {
+                "shield_block_off_hand": "query.blocking && query.get_equipped_item_name('off_hand') == 'shield' && !(variable.item_use_normalized > 0 && variable.item_use_normalized < 1.0)"
+              },
+              {
+                "crossbow_controller": "query.get_equipped_item_name == 'crossbow'"
+              },
+              {
+                "third_person_bow_equipped": "query.get_equipped_item_name == 'bow' && (variable.item_use_normalized > 0 && variable.item_use_normalized < 1.0)"
+              }
+            ]
+          }
+        }
+      },
+      "look_at_target": {
+        "initial_state": "default",
+        "states": {
+          "default": {
+            "animations": [
+              "look_at_target_default"
+            ],
+            "transitions": [
+              {
+                "gliding": "query.is_gliding"
+              },
+              {
+                "swimming": "query.is_swimming"
+              }
+            ]
+          },
+          "gliding": {
+            "animations": [
+              "look_at_target_gliding"
+            ],
+            "transitions": [
+              {
+                "swimming": "query.is_swimming"
+              },
+              {
+                "default": "!query.is_gliding"
+              }
+            ]
+          },
+          "swimming": {
+            "animations": [
+              "look_at_target_swimming"
+            ],
+            "transitions": [
+              {
+                "gliding": "query.is_gliding"
+              },
+              {
+                "default": "!query.is_swimming"
+              }
+            ]
+          }
+        }
+      },
+      "first_person_attack_controller": {
+        "initial_state": "default",
+        "states": {
+          "default": {
+            "animations": [
+              "first_person_attack_rotation"
+            ],
+            "transitions": [
+              {
+                "vr_attack": "variable.is_using_vr"
+              }
+            ]
+          },
+          "vr_attack": {
+            "animations": [
+              "first_person_vr_attack_rotation"
+            ],
+            "transitions": [
+              {
+                "default": "!variable.is_using_vr"
+              }
+            ]
+          }
+        }
+      },
+      "first_person_map_controller": {
+        "initial_state": "default",
+        "states": {
+          "default": {
+            "transitions": [
+              {
+                "one_hand": "query.get_equipped_item_name('off_hand') == 'map' || query.get_equipped_item_name('off_hand') == 'shield'"
+              },
+              {
+                "two_hand": "query.get_equipped_item_name('off_hand') != 'map' && query.get_equipped_item_name('off_hand') != 'shield'"
+              }
+            ]
+          },
+          "one_hand": {
+            "animations": [
+              {
+                "first_person_map_hold_main_hand": "query.get_equipped_item_name(0, 1) == 'map'"
+              },
+              {
+                "first_person_map_hold_off_hand": "query.get_equipped_item_name('off_hand') == 'map' && (query.get_equipped_item_name == 'bow' ? !(variable.item_use_normalized > 0 && variable.item_use_normalized < 1.0) : 1.0)"
+              }
+            ],
+            "transitions": [
+              {
+                "default": "query.get_equipped_item_name(0, 1) != 'map' && query.get_equipped_item_name('off_hand') != 'map'"
+              },
+              {
+                "two_hand": "query.get_equipped_item_name('off_hand') != 'map' && query.get_equipped_item_name('off_hand') != 'shield'"
+              }
+            ]
+          },
+          "two_hand": {
+            "animations": [
+              "first_person_map_hold",
+              "first_person_map_hold_attack"
+            ],
+            "transitions": [
+              {
+                "default": "query.get_equipped_item_name(0, 1) != 'map' && query.get_equipped_item_name('off_hand') != 'map'"
+              },
+              {
+                "one_hand": "query.get_equipped_item_name('off_hand') == 'map' || query.get_equipped_item_name('off_hand') == 'shield'"
+              }
+            ]
+          }
+        }
+      },
+      "crossbow_controller": {
+        "initial_state": "default",
+        "states": {
+          "charge": {
+            "animations": [
+              "third_person_crossbow_equipped"
+            ],
+            "transitions": [
+              {
+                "default": "query.get_equipped_item_name != 'crossbow' || (query.item_remaining_use_duration <= 0.0 && !query.item_is_charged)"
+              },
+              {
+                "hold": "query.item_is_charged"
+              }
+            ]
+          },
+          "default": {
+            "transitions": [
+              {
+                "hold": "query.item_is_charged"
+              },
+              {
+                "charge": "query.item_remaining_use_duration > 0.0"
+              }
+            ]
+          },
+          "hold": {
+            "animations": [
+              "crossbow_hold"
+            ],
+            "transitions": [
+              {
+                "default": "query.get_equipped_item_name != 'crossbow' || (query.item_remaining_use_duration <= 0.0 && !query.item_is_charged)"
+              },
+              {
+                "charge": "query.item_remaining_use_duration > 0.0"
+              }
+            ]
+          }
+        }
+      },
+      "blink": {
+        "initial_state": "default",
+        "states": {
+          "default": {
+            "transitions": [
+              {
+                "open": "variable.is_blinking = 0; variable.last_blink_time = query.life_time; return variable.last_blink_time != 0;"
+              }
+            ]
+          },
+          "open": {
+            "transitions": [
+              {
+                "blink": "variable.is_blinking = 0; variable.return_from_blink = query.life_time + math.random(0, 0.2); return query.life_time > (variable.last_blink_time + math.random(3, 40));"
+              }
+            ]
+          },
+          "blink": {
+            "transitions": [
+              {
+                "open": "variable.is_blinking = 1; variable.last_blink_time = query.life_time; return query.all_animations_finished && (query.life_time > variable.return_from_blink);"
+              }
+            ]
+          }
+        }
+      }
+    }
+  },
+  "player_slim": {
+    "identifier": "minecraft:player_slim",
+    "materials": {
+      "default": "entity_alphatest",
+      "cape": "entity_alphatest",
+      "animated": "player_animated"
+    },
+    "textures": {
+      "default": "textures/entity/alex"
+    },
+    "geometry": {
+      "default": {
+        "visible_bounds_width": 1,
+        "visible_bounds_height": 2,
+        "visible_bounds_offset": [
+          0,
+          1,
+          0
+        ],
+        "bones": [
+          {
+            "name": "root",
+            "pivot": [
+              0,
+              0,
+              0
+            ]
+          },
+          {
+            "name": "body",
+            "parent": "waist",
+            "pivot": [
+              0,
+              24,
+              0
+            ],
+            "cubes": [
+              {
+                "origin": [
+                  -4,
+                  12,
+                  -2
+                ],
+                "size": [
+                  8,
+                  12,
+                  4
+                ],
+                "uv": [
+                  16,
+                  16
+                ]
+              }
+            ]
+          },
+          {
+            "name": "waist",
+            "parent": "root",
+            "pivot": [
+              0,
+              12,
+              0
+            ]
+          },
+          {
+            "name": "head",
+            "parent": "body",
+            "pivot": [
+              0,
+              24,
+              0
+            ],
+            "cubes": [
+              {
+                "origin": [
+                  -4,
+                  24,
+                  -4
+                ],
+                "size": [
+                  8,
+                  8,
+                  8
+                ],
+                "uv": [
+                  0,
+                  0
+                ]
+              }
+            ]
+          },
+          {
+            "name": "cape",
+            "pivot": [
+              0,
+              24,
+              3
+            ],
+            "parent": "body"
+          },
+          {
+            "name": "hat",
+            "parent": "head",
+            "pivot": [
+              0,
+              24,
+              0
+            ],
+            "cubes": [
+              {
+                "origin": [
+                  -4,
+                  24,
+                  -4
+                ],
+                "size": [
+                  8,
+                  8,
+                  8
+                ],
+                "uv": [
+                  32,
+                  0
+                ],
+                "inflate": 0.5
+              }
+            ]
+          },
+          {
+            "name": "leftArm",
+            "parent": "body",
+            "pivot": [
+              5,
+              21.5,
+              0
+            ],
+            "cubes": [
+              {
+                "origin": [
+                  4,
+                  11.5,
+                  -2
+                ],
+                "size": [
+                  3,
+                  12,
+                  4
+                ],
+                "uv": [
+                  32,
+                  48
+                ]
+              }
+            ]
+          },
+          {
+            "name": "leftSleeve",
+            "parent": "leftArm",
+            "pivot": [
+              5,
+              21.5,
+              0
+            ],
+            "cubes": [
+              {
+                "origin": [
+                  4,
+                  11.5,
+                  -2
+                ],
+                "size": [
+                  3,
+                  12,
+                  4
+                ],
+                "uv": [
+                  48,
+                  48
+                ],
+                "inflate": 0.25
+              }
+            ]
+          },
+          {
+            "name": "leftItem",
+            "pivot": [
+              6,
+              15,
+              1
+            ],
+            "parent": "leftArm"
+          },
+          {
+            "name": "rightArm",
+            "parent": "body",
+            "pivot": [
+              -5,
+              21.5,
+              0
+            ],
+            "cubes": [
+              {
+                "origin": [
+                  -7,
+                  11.5,
+                  -2
+                ],
+                "size": [
+                  3,
+                  12,
+                  4
+                ],
+                "uv": [
+                  40,
+                  16
+                ]
+              }
+            ]
+          },
+          {
+            "name": "rightSleeve",
+            "parent": "rightArm",
+            "pivot": [
+              -5,
+              21.5,
+              0
+            ],
+            "cubes": [
+              {
+                "origin": [
+                  -7,
+                  11.5,
+                  -2
+                ],
+                "size": [
+                  3,
+                  12,
+                  4
+                ],
+                "uv": [
+                  40,
+                  32
+                ],
+                "inflate": 0.25
+              }
+            ]
+          },
+          {
+            "name": "rightItem",
+            "pivot": [
+              -6,
+              15,
+              1
+            ],
+            "locators": {
+              "lead_hold": [
+                -6,
+                15,
+                1
+              ]
+            },
+            "parent": "rightArm"
+          },
+          {
+            "name": "leftLeg",
+            "parent": "root",
+            "pivot": [
+              1.9,
+              12,
+              0
+            ],
+            "cubes": [
+              {
+                "origin": [
+                  -0.1,
+                  0,
+                  -2
+                ],
+                "size": [
+                  4,
+                  12,
+                  4
+                ],
+                "uv": [
+                  16,
+                  48
+                ]
+              }
+            ]
+          },
+          {
+            "name": "leftPants",
+            "parent": "leftLeg",
+            "pivot": [
+              1.9,
+              12,
+              0
+            ],
+            "cubes": [
+              {
+                "origin": [
+                  -0.1,
+                  0,
+                  -2
+                ],
+                "size": [
+                  4,
+                  12,
+                  4
+                ],
+                "uv": [
+                  0,
+                  48
+                ],
+                "inflate": 0.25
+              }
+            ]
+          },
+          {
+            "name": "rightLeg",
+            "parent": "root",
+            "pivot": [
+              -1.9,
+              12,
+              0
+            ],
+            "cubes": [
+              {
+                "origin": [
+                  -3.9,
+                  0,
+                  -2
+                ],
+                "size": [
+                  4,
+                  12,
+                  4
+                ],
+                "uv": [
+                  0,
+                  16
+                ]
+              }
+            ]
+          },
+          {
+            "name": "rightPants",
+            "parent": "rightLeg",
+            "pivot": [
+              -1.9,
+              12,
+              0
+            ],
+            "cubes": [
+              {
+                "origin": [
+                  -3.9,
+                  0,
+                  -2
+                ],
+                "size": [
+                  4,
+                  12,
+                  4
+                ],
+                "uv": [
+                  0,
+                  32
+                ],
+                "inflate": 0.25
+              }
+            ]
+          },
+          {
+            "name": "jacket",
+            "parent": "body",
+            "pivot": [
+              0,
+              24,
+              0
+            ],
+            "cubes": [
+              {
+                "origin": [
+                  -4,
+                  12,
+                  -2
+                ],
+                "size": [
+                  8,
+                  12,
+                  4
+                ],
+                "uv": [
+                  16,
+                  32
+                ],
+                "inflate": 0.25
+              }
+            ]
+          }
+        ],
+        "texturewidth": 64,
+        "textureheight": 64
+      },
+      "cape": {
+        "texturewidth": 64,
+        "textureheight": 32,
+        "bones": [
+          {
+            "name": "root",
+            "pivot": [
+              0,
+              0,
+              0
+            ]
+          },
+          {
+            "name": "body",
+            "pivot": [
+              0,
+              24,
+              0
+            ],
+            "parent": "waist"
+          },
+          {
+            "name": "waist",
+            "parent": "root",
+            "neverRender": true,
+            "pivot": [
+              0,
+              12,
+              0
+            ]
+          },
+          {
+            "name": "cape",
+            "parent": "body",
+            "pivot": [
+              0,
+              24,
+              3
+            ],
+            "bind_pose_rotation": [
+              6,
+              180,
+              0
+            ],
+            "rotation": [
+              6,
+              180,
+              0
+            ],
+            "cubes": [
+              {
+                "origin": [
+                  -5,
+                  8,
+                  3
+                ],
+                "size": [
+                  10,
+                  16,
+                  1
+                ],
+                "uv": [
+                  0,
+                  0
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    },
+    "scripts": {
+      "scale": "0.9375",
+      "initialize": [
+        "variable.is_holding_right = 0.0;",
+        "variable.is_blinking = 0.0;",
+        "variable.last_blink_time = 0.0;",
+        "variable.hand_bob = 0.0;"
+      ],
+      "pre_animation": [
+        "variable.helmet_layer_visible = 1.0;",
+        "variable.leg_layer_visible = 1.0;",
+        "variable.boot_layer_visible = 1.0;",
+        "variable.chest_layer_visible = 1.0;",
+        "variable.attack_body_rot_y = Math.sin(360*Math.sqrt(variable.attack_time)) * 5.0;",
+        "variable.tcos0 = (math.cos(query.modified_distance_moved * 38.17) * query.modified_move_speed / variable.gliding_speed_value) * 57.3;",
+        "variable.first_person_rotation_factor = math.sin((1 - variable.attack_time) * 180.0);",
+        "variable.hand_bob = query.life_time < 0.01 ? 0.0 : variable.hand_bob + ((query.is_on_ground && query.is_alive ? math.clamp(math.sqrt(math.pow(query.position_delta(0), 2.0) + math.pow(query.position_delta(2), 2.0)), 0.0, 0.1) : 0.0) - variable.hand_bob) * 0.02;",
+        "variable.map_angle = math.clamp(1 - variable.player_x_rotation / 45.1, 0.0, 1.0);",
+        "variable.item_use_normalized = query.main_hand_item_use_duration / query.main_hand_item_max_duration;"
+      ],
+      "animate": [
+        "root"
+      ]
+    },
+    "animations": {
+      "humanoid_base_pose": {
+        "loop": true,
+        "bones": {
+          "waist": {
+            "rotation": [
+              0,
+              0,
+              0
+            ]
+          }
+        }
+      },
+      "look_at_target_ui": {
+        "loop": true,
+        "bones": {
+          "head": {
+            "rotation": [
+              "query.target_x_rotation",
+              "query.target_y_rotation",
+              0
+            ]
+          }
+        }
+      },
+      "look_at_target_default": {
+        "loop": true,
+        "bones": {
+          "head": {
+            "relative_to": {
+              "rotation": "entity"
+            },
+            "rotation": [
+              "query.target_x_rotation",
+              "query.target_y_rotation",
+              0
+            ]
+          }
+        }
+      },
+      "look_at_target_gliding": {
+        "loop": true,
+        "bones": {
+          "head": {
+            "rotation": [
+              -45,
+              "query.target_y_rotation",
+              0
+            ]
+          }
+        }
+      },
+      "look_at_target_swimming": {
+        "loop": true,
+        "bones": {
+          "head": {
+            "rotation": [
+              "math.lerp(query.target_x_rotation, -45.0, variable.swim_amount)",
+              "query.target_y_rotation",
+              0
+            ]
+          }
+        }
+      },
+      "look_at_target_inverted": {
+        "loop": true,
+        "bones": {
+          "head": {
+            "rotation": [
+              "-query.target_x_rotation",
+              "-query.target_y_rotation",
+              0
+            ]
+          }
+        }
+      },
+      "cape": {
+        "loop": true,
+        "bones": {
+          "cape": {
+            "position": [
+              0,
+              "query.get_root_locator_offset('armor_offset.default_neck', 1)",
+              0
+            ],
+            "rotation": [
+              "math.lerp(0.0, -126.0, query.cape_flap_amount) - 6.0",
+              0,
+              0
+            ]
+          }
+        }
+      },
+      "move.arms": {
+        "loop": true,
+        "bones": {
+          "leftarm": {
+            "rotation": [
+              "variable.tcos0",
+              0,
+              0
+            ]
+          },
+          "rightarm": {
+            "rotation": [
+              "-variable.tcos0",
+              0,
+              0
+            ]
+          }
+        }
+      },
+      "move.legs": {
+        "loop": true,
+        "bones": {
+          "leftleg": {
+            "rotation": [
+              "variable.tcos0 * -1.4",
+              0,
+              0
+            ]
+          },
+          "rightleg": {
+            "rotation": [
+              "variable.tcos0 * 1.4",
+              0,
+              0
+            ]
+          }
+        }
+      },
+      "swimming": {
+        "animation_length": 1.3,
+        "loop": true,
+        "override_previous_animation": true,
+        "bones": {
+          "leftarm": {
+            "rotation": {
+              "0": [
+                0,
+                180,
+                180
+              ],
+              "0.7": [
+                0,
+                180,
+                287.2
+              ],
+              "1.1": [
+                90,
+                180,
+                180
+              ],
+              "1.3": [
+                0,
+                180,
+                180
+              ]
+            }
+          },
+          "rightarm": {
+            "rotation": {
+              "0": [
+                0,
+                180,
+                -180
+              ],
+              "0.7": [
+                0,
+                180,
+                -287.2
+              ],
+              "1.1": [
+                90,
+                180,
+                -180
+              ],
+              "1.3": [
+                0,
+                180,
+                -180
+              ]
+            }
+          },
+          "root": {
+            "position": [
+              0,
+              "(math.sin(query.target_x_rotation) * 24.0 + 3.0) * variable.swim_amount",
+              "(math.cos(query.target_x_rotation) * 24.0 + 9.0) * variable.swim_amount"
+            ],
+            "rotation": [
+              "variable.swim_amount * (90 + query.target_x_rotation)",
+              0,
+              0
+            ]
+          }
+        }
+      },
+      "swimming.legs": {
+        "loop": true,
+        "override_previous_animation": true,
+        "bones": {
+          "leftleg": {
+            "rotation": [
+              "math.lerp(0.0, math.cos(query.life_time * 390.0 + 180.0) * 17.2, variable.swim_amount)",
+              0,
+              0
+            ]
+          },
+          "rightleg": {
+            "rotation": [
+              "math.lerp(0.0, math.cos(query.life_time * 390.0) * 17.2, variable.swim_amount)",
+              0,
+              0
+            ]
+          }
+        }
+      },
+      "riding.arms": {
+        "loop": true,
+        "bones": {
+          "leftarm": {
+            "rotation": [
+              -36,
+              0,
+              0
+            ]
+          },
+          "rightarm": {
+            "rotation": [
+              -36,
+              0,
+              0
+            ]
+          }
+        }
+      },
+      "riding.legs": {
+        "loop": true,
+        "bones": {
+          "leftleg": {
+            "rotation": [
+              "-72.0 - this",
+              "-18.0 - this",
+              "-this"
+            ]
+          },
+          "rightleg": {
+            "rotation": [
+              "-72.0 - this",
+              "18.0 - this",
+              "-this"
+            ]
+          }
+        }
+      },
+      "holding": {
+        "loop": true,
+        "bones": {
+          "leftarm": {
+            "rotation": [
+              "variable.is_holding_left ? (-this * 0.5 - 18.0) : 0.0",
+              0,
+              0
+            ]
+          },
+          "rightarm": {
+            "rotation": [
+              "variable.is_holding_right ? (-this * 0.5 - 18.0) : 0.0",
+              0,
+              0
+            ]
+          }
+        }
+      },
+      "brandish_spear": {
+        "loop": true,
+        "bones": {
+          "rightarm": {
+            "rotation": [
+              "this * -0.5 - 157.5 - 22.5 * variable.charge_amount",
+              "-this",
+              0
+            ]
+          }
+        }
+      },
+      "charging": {
+        "loop": true,
+        "bones": {
+          "rightarm": {
+            "rotation": [
+              "22.5 * variable.charge_amount - this",
+              "-this",
+              0
+            ]
+          }
+        }
+      },
+      "attack.positions": {
+        "loop": true,
+        "bones": {
+          "head": {
+            "rotation": [
+              0,
+              0,
+              0
+            ]
+          }
+        }
+      },
+      "attack.rotations": {
+        "loop": true,
+        "bones": {
+          "body": {
+            "rotation": [
+              0,
+              "variable.attack_body_rot_y",
+              0
+            ]
+          },
+          "leftarm": {
+            "rotation": [
+              "-(math.sin((1 - math.pow((1 - variable.attack_time), 4)) * 180) * 1.2 + math.sin(variable.attack_time * 180)) * 10.0",
+              0,
+              0
+            ]
+          },
+          "rightarm": {
+            "rotation": [
+              "-(math.sin((1 - math.pow((1 - variable.attack_time), 4)) * 180) * 1.2 + math.sin(variable.attack_time * 180)) * 30.0",
+              "-(math.sin((1 - math.pow((1 - variable.attack_time), 4)) * 180) ? (-90.0 * math.sin((1 - math.pow((1 - variable.attack_time), 4)) * 180)) + 30.0 : 0.0)",
+              0
+            ]
+          }
+        }
+      },
+      "sneaking": {
+        "loop": true,
+        "bones": {
+          "body": {
+            "position": [
+              0,
+              -2,
+              0
+            ]
+          },
+          "head": {
+            "position": [
+              0,
+              -1,
+              0
+            ]
+          },
+          "leftarm": {
+            "rotation": [
+              -5.7,
+              0,
+              0
+            ]
+          },
+          "leftleg": {
+            "rotation": [
+              -28,
+              0,
+              0
+            ]
+          },
+          "rightarm": {
+            "rotation": [
+              -5.7,
+              0,
+              0
+            ]
+          },
+          "rightleg": {
+            "rotation": [
+              -28,
+              0,
+              0
+            ]
+          },
+          "root": {
+            "position": [
+              0,
+              1.25,
+              9
+            ],
+            "rotation": [
+              "28.0 - this",
+              0,
+              0
+            ]
+          }
+        }
+      },
+      "bob": {
+        "loop": true,
+        "bones": {
+          "leftarm": {
+            "rotation": [
+              0,
+              0,
+              "-((math.cos(query.life_time * 103.2) * 2.865) + 2.865)"
+            ]
+          },
+          "rightarm": {
+            "rotation": [
+              0,
+              0,
+              "(math.cos(query.life_time * 103.2) * 2.865) + 2.865"
+            ]
+          }
+        }
+      },
+      "damage_nearby_mobs": {
+        "loop": true,
+        "bones": {
+          "leftarm": {
+            "rotation": [
+              "-45.0-this",
+              "-this",
+              "-this"
+            ]
+          },
+          "leftleg": {
+            "rotation": [
+              "45.0-this",
+              "-this",
+              "-this"
+            ]
+          },
+          "rightarm": {
+            "rotation": [
+              "45.0-this",
+              "-this",
+              "-this"
+            ]
+          },
+          "rightleg": {
+            "rotation": [
+              "-45.0-this",
+              "-this",
+              "-this"
+            ]
+          }
+        }
+      },
+      "fishing_rod": {
+        "loop": true,
+        "bones": {
+          "rightarm": {
+            "rotation": [
+              " -19.0 - this",
+              "-this",
+              "-this"
+            ]
+          }
+        }
+      },
+      "use_item_progress": {
+        "loop": true,
+        "bones": {
+          "rightarm": {
+            "rotation": [
+              "variable.use_item_startup_progress * -60.0 + variable.use_item_interval_progress * 11.25",
+              "variable.use_item_startup_progress * -22.5 + variable.use_item_interval_progress * 11.25",
+              "variable.use_item_startup_progress * -5.625 + variable.use_item_interval_progress * 11.25"
+            ]
+          }
+        }
+      },
+      "skeleton_attack": {
+        "loop": true,
+        "bones": {
+          "leftarm": {
+            "rotation": [
+              "-68.75 * math.sin(variable.attack_time * 180.0) + 22.92 * (math.sin((1.0 - (1.0 - variable.attack_time) * (1.0 - variable.attack_time)) * 180.0))",
+              "5.73 - math.sin(variable.attack_time * 180.0) * 34.38 - this",
+              "-this"
+            ]
+          },
+          "rightarm": {
+            "rotation": [
+              "-68.75 * math.sin(variable.attack_time * 180.0) + 22.92 * (math.sin((1.0 - (1.0 - variable.attack_time) * (1.0 - variable.attack_time)) * 180.0))",
+              "-5.73 + math.sin(variable.attack_time * 180.0) * 34.38 - this",
+              "-this"
+            ]
+          }
+        }
+      },
+      "sleeping": {
+        "loop": true,
+        "override_previous_animation": true,
+        "bones": {
+          "head": {
+            "rotation": [
+              "30.0 - this",
+              "-this",
+              "-this"
+            ]
+          },
+          "root": {
+            "position": [
+              "24.0 * math.cos(query.body_y_rotation) * math.cos(query.sleep_rotation) - 24.0 * math.sin(query.body_y_rotation) * math.sin(query.sleep_rotation)",
+              0,
+              "24.0 * math.cos(query.body_y_rotation) * math.sin(query.sleep_rotation) + 24.0 * math.sin(query.body_y_rotation) * math.cos(query.sleep_rotation)"
+            ],
+            "rotation": [
+              -90,
+              "270.0 - query.sleep_rotation - query.body_y_rotation",
+              0
+            ]
+          }
+        }
+      },
+      "first_person_base_pose": {
+        "loop": true,
+        "bones": {
+          "body": {
+            "rotation": [
+              "query.target_x_rotation",
+              "query.target_y_rotation",
+              0
+            ]
+          }
+        }
+      },
+      "first_person_empty_hand": {
+        "loop": true,
+        "bones": {
+          "rightarm": {
+            "position": [
+              13.5,
+              -10,
+              12
+            ],
+            "rotation": [
+              "95.0 + variable.is_using_vr * 7.5",
+              "-45.0 + variable.is_using_vr * 7.5",
+              "115.0 + variable.is_using_vr * -2.5"
+            ]
+          }
+        }
+      },
+      "first_person_swap_item": {
+        "loop": true,
+        "bones": {
+          "leftarm": {
+            "position": [
+              0,
+              "query.get_equipped_item_name('off_hand') == 'map' ? 0.0 : -10.0 * (1.0 - variable.player_arm_height)",
+              0
+            ]
+          },
+          "rightarm": {
+            "position": [
+              0,
+              "-10.0 * (1.0 - variable.player_arm_height)",
+              0
+            ]
+          }
+        }
+      },
+      "first_person_attack_rotation": {
+        "loop": true,
+        "bones": {
+          "rightarm": {
+            "position": [
+              "math.clamp(-15.5 * math.sin(variable.first_person_rotation_factor * variable.attack_time * 112.0), -7.0, 999.0) * math.sin(variable.first_person_rotation_factor * variable.attack_time * 112.0)",
+              "math.sin(variable.first_person_rotation_factor * (1.0 - variable.attack_time) * (1.0 - variable.attack_time) * 200.0) * 7.5 - variable.first_person_rotation_factor * variable.attack_time * 15.0 + variable.short_arm_offset_right",
+              "math.sin(variable.first_person_rotation_factor * variable.attack_time * 120.0) * 1.75"
+            ],
+            "rotation": [
+              "math.sin(variable.first_person_rotation_factor * (1.0 - variable.attack_time) * (1.0 - variable.attack_time) * 280.0) * -60.0",
+              "math.sin(variable.first_person_rotation_factor * (1.0 - variable.attack_time) * (1.0 - variable.attack_time) * 280.0) * 40.0",
+              "math.sin(variable.first_person_rotation_factor * (1.0 - variable.attack_time) * (1.0 - variable.attack_time) * 280.0) * 20.0"
+            ]
+          }
+        }
+      },
+      "first_person_vr_attack_rotation": {
+        "loop": true,
+        "bones": {
+          "rightarm": {
+            "position": [
+              "5.0 * math.sin(variable.first_person_rotation_factor * variable.attack_time * 112.0)",
+              "(math.sin(variable.first_person_rotation_factor * (1.0 - variable.attack_time) * (1.0 - variable.attack_time) * 200.0) - 0.8) * 8.75 + 5.0",
+              "math.sin(variable.first_person_rotation_factor * variable.attack_time * 120.0) * 15.0"
+            ],
+            "rotation": [
+              "30.7 * math.sin(variable.first_person_rotation_factor * variable.attack_time * -180.0 - 45.0) * 1.5",
+              0,
+              "21.8 * math.sin(variable.first_person_rotation_factor * variable.attack_time * 200.0 + 30.0) * 1.25"
+            ]
+          }
+        }
+      },
+      "first_person_map_hold": {
+        "loop": true,
+        "bones": {
+          "leftarm": {
+            "position": [
+              "-16.250 + variable.is_vertical_splitscreen * 7.0",
+              "-10.75 - variable.map_angle * 8.0 + variable.is_vertical_splitscreen * 0.6 - variable.short_arm_offset_left",
+              "9.0 - variable.map_angle * 8.0 + variable.short_arm_offset_left"
+            ],
+            "rotation": [
+              40,
+              -20,
+              -155
+            ],
+            "scale": [
+              1.15,
+              1.15,
+              1.15
+            ]
+          },
+          "rightarm": {
+            "position": [
+              "12.50 + variable.is_vertical_splitscreen * 1.75",
+              "-7.5 - variable.map_angle * 8.0 + variable.is_vertical_splitscreen * 0.5 - variable.short_arm_offset_right",
+              "5.25 - variable.map_angle * 8.0 + variable.short_arm_offset_right"
+            ],
+            "rotation": [
+              77.5,
+              7.5,
+              160
+            ]
+          }
+        }
+      },
+      "first_person_map_hold_attack": {
+        "loop": true,
+        "bones": {
+          "leftarm": {
+            "position": [
+              "math.sin(variable.first_person_rotation_factor * variable.attack_time * 112.0) * -10.75",
+              "math.sin(variable.first_person_rotation_factor * (1.0 - variable.attack_time) * (1.0 - variable.attack_time) * 200.0) * 3.75 - variable.first_person_rotation_factor * variable.attack_time * 1.25 + variable.short_arm_offset_left",
+              "math.sin(variable.first_person_rotation_factor * variable.attack_time * 120.0) * 5.75"
+            ],
+            "rotation": [
+              "variable.map_angle * 90.0",
+              "-15.0 * math.sin(variable.first_person_rotation_factor * (1.0 - variable.attack_time) * -100.0)",
+              0
+            ]
+          },
+          "rightarm": {
+            "position": [
+              "math.sin(variable.first_person_rotation_factor * variable.attack_time * 112.0) * -6.25",
+              "math.sin(variable.first_person_rotation_factor * (1.0 - variable.attack_time) * (1.0 - variable.attack_time) * 200.0) * 1.75 + variable.short_arm_offset_right",
+              "math.sin(variable.first_person_rotation_factor * variable.attack_time * 120.0) * 5.25"
+            ],
+            "rotation": [
+              "variable.map_angle * 90.0",
+              0,
+              0
+            ]
+          }
+        }
+      },
+      "first_person_map_hold_off_hand": {
+        "loop": true,
+        "bones": {
+          "leftarm": {
+            "position": [
+              "-14.50 + variable.is_horizontal_splitscreen * 2.0 + variable.is_vertical_splitscreen * 8.7",
+              "-8.250 + variable.short_arm_offset_left",
+              "11.50 + variable.is_horizontal_splitscreen * 0.5"
+            ],
+            "rotation": [
+              195,
+              182.5,
+              2.5
+            ],
+            "scale": [
+              0.75,
+              0.75,
+              0.75
+            ]
+          }
+        }
+      },
+      "first_person_map_hold_main_hand": {
+        "loop": true,
+        "bones": {
+          "rightarm": {
+            "position": [
+              "14.50 - variable.is_vertical_splitscreen * 0.75",
+              "-8.25 + variable.short_arm_offset_right + math.sin(variable.first_person_rotation_factor * (1.0 - variable.attack_time) * (1.0 - variable.attack_time) * 200.0) * 2.75 - variable.first_person_rotation_factor * variable.attack_time * 3.0 - variable.is_horizontal_splitscreen",
+              "11.5 + math.sin(variable.first_person_rotation_factor * variable.attack_time * 120.0) * 3.5 + variable.is_horizontal_splitscreen * 3.5"
+            ],
+            "rotation": [
+              195,
+              182.5,
+              -5
+            ],
+            "scale": [
+              0.75,
+              0.75,
+              0.75
+            ]
+          }
+        }
+      },
+      "first_person_crossbow_equipped": {
+        "loop": true,
+        "override_previous_animation": true,
+        "bones": {
+          "leftarm": {
+            "position": [
+              "1.5 - variable.item_use_normalized * 3.5",
+              "-3.799999952316284 + variable.short_arm_offset_left",
+              "8.25 - (1 - variable.item_use_normalized)"
+            ],
+            "rotation": [
+              165,
+              -60,
+              45
+            ],
+            "scale": [
+              0.4,
+              0.4,
+              0.4
+            ]
+          }
+        }
+      },
+      "third_person_crossbow_equipped": {
+        "loop": true,
+        "bones": {
+          "leftarm": {
+            "position": [
+              0,
+              0,
+              0.5
+            ],
+            "rotation": [
+              "-this - 65.0 - (1.0 - variable.item_use_normalized) * 5.0",
+              "-this + (1.0 - variable.item_use_normalized) * 30.0",
+              "-this + 20.0 + (1.0 - variable.item_use_normalized) * 10.0"
+            ]
+          },
+          "rightarm": {
+            "rotation": [
+              "- 60.0 - this",
+              "- 45.0 - this",
+              "- 2.5 - this"
+            ]
+          }
+        }
+      },
+      "third_person_bow_equipped": {
+        "loop": true,
+        "bones": {
+          "leftarm": {
+            "rotation": [
+              "-90.0 + query.target_x_rotation - query.is_sneaking * 15.0 - this",
+              "27.5 + query.target_y_rotation",
+              0
+            ]
+          },
+          "rightarm": {
+            "rotation": [
+              "-90.0 + query.target_x_rotation - query.is_sneaking * 15.0 - this",
+              "-5.0 + query.target_y_rotation",
+              0
+            ]
+          },
+          "rightitem": {
+            "rotation": [
+              0,
+              -10,
+              0
+            ]
+          }
+        }
+      },
+      "crossbow_hold": {
+        "loop": true,
+        "bones": {
+          "leftarm": {
+            "rotation": [
+              "query.is_swimming ? 0.0 : -93.0 + query.target_x_rotation - query.is_sneaking * 27.0 -this",
+              "query.is_swimming ? 0.0 : 42.0 + math.clamp(query.target_y_rotation, -45.0, 5.0) -this",
+              "query.is_sneaking * -15.0"
+            ]
+          },
+          "rightarm": {
+            "rotation": [
+              "query.is_swimming ? 0.0 : -93.0 + query.target_x_rotation - query.is_sneaking * 27.0 -this",
+              "query.is_swimming ? 0.0 : math.clamp(query.target_y_rotation, -60.0, 45.0) -this",
+              0
+            ]
+          }
+        }
+      },
+      "shield_block_main_hand": {
+        "loop": true,
+        "bones": {
+          "rightarm": {
+            "rotation": [
+              -20,
+              -30,
+              -25
+            ]
+          },
+          "rightitem": {
+            "position": [
+              -1,
+              -3,
+              0
+            ],
+            "rotation": [
+              0,
+              -60,
+              -45
+            ]
+          }
+        }
+      },
+      "shield_block_off_hand": {
+        "loop": true,
+        "bones": {
+          "leftarm": {
+            "rotation": [
+              -20,
+              20,
+              20
+            ]
+          },
+          "leftitem": {
+            "position": [
+              "1.0 + query.item_is_charged * 1.5",
+              "-3.0 + query.item_is_charged",
+              0
+            ],
+            "rotation": [
+              "query.item_is_charged * 30.0",
+              "70.0 - query.item_is_charged * 60.0",
+              "65.0 - query.item_is_charged * 15.0"
+            ]
+          }
+        }
+      }
+    },
+    "render_controllers": [
+      {
+        "controller.render.player.first_person": "variable.is_first_person"
+      },
+      {
+        "controller.render.player.third_person": "!variable.is_first_person && !variable.map_face_icon"
+      },
+      {
+        "controller.render.player.map": "variable.map_face_icon"
+      }
+    ],
+    "enable_attachables": true,
+    "animation_controllers": {
+      "root": {
+        "initial_state": "first_person",
+        "states": {
+          "first_person": {
+            "animations": [
+              "first_person_swap_item",
+              {
+                "first_person_attack_controller": "variable.attack_time > 0.0f && query.get_equipped_item_name != 'map'"
+              },
+              "first_person_base_pose",
+              {
+                "first_person_empty_hand": "query.get_equipped_item_name(0, 1) != 'map'"
+              },
+              {
+                "first_person_map_controller": "(query.get_equipped_item_name(0, 1) == 'map' || query.get_equipped_item_name('off_hand') == 'map')"
+              },
+              {
+                "first_person_crossbow_equipped": "query.get_equipped_item_name == 'crossbow' && (variable.item_use_normalized > 0 && variable.item_use_normalized < 1.0)"
+              }
+            ],
+            "transitions": [
+              {
+                "paperdoll": "variable.is_paperdoll"
+              },
+              {
+                "map_player": "variable.map_face_icon"
+              },
+              {
+                "third_person": "!variable.is_first_person"
+              }
+            ]
+          },
+          "map_player": {
+            "transitions": [
+              {
+                "paperdoll": "variable.is_paperdoll"
+              },
+              {
+                "first_person": "variable.is_first_person"
+              },
+              {
+                "third_person": "!variable.map_face_icon && !variable.is_first_person"
+              }
+            ]
+          },
+          "paperdoll": {
+            "animations": [
+              "humanoid_base_pose",
+              {
+                "look_at_target_ui": "variable.should_look_at_target_ui"
+              },
+              "move.arms",
+              "move.legs",
+              "cape"
+            ],
+            "transitions": [
+              {
+                "first_person": "!variable.is_paperdoll && variable.is_first_person"
+              },
+              {
+                "map_player": "variable.map_face_icon"
+              },
+              {
+                "third_person": "!variable.is_paperdoll && !variable.is_first_person"
+              }
+            ]
+          },
+          "third_person": {
+            "animations": [
+              "humanoid_base_pose",
+              {
+                "look_at_target": "!query.is_sleeping && !query.is_emoting"
+              },
+              "move.arms",
+              "move.legs",
+              "cape",
+              {
+                "riding.arms": "query.is_riding"
+              },
+              {
+                "riding.legs": "query.is_riding"
+              },
+              "holding",
+              {
+                "brandish_spear": "variable.is_brandishing_spear"
+              },
+              {
+                "charging": "query.is_charging"
+              },
+              {
+                "sneaking": "query.is_sneaking && !query.is_sleeping"
+              },
+              "bob",
+              {
+                "damage_nearby_mobs": "variable.damage_nearby_mobs"
+              },
+              {
+                "swimming": "variable.swim_amount > 0.0"
+              },
+              {
+                "swimming.legs": "variable.swim_amount > 0.0"
+              },
+              {
+                "use_item_progress": "( variable.use_item_interval_progress > 0.0 ) || ( variable.use_item_startup_progress > 0.0 ) && !variable.is_brandishing_spear"
+              },
+              {
+                "fishing_rod": "query.get_equipped_item_name == 'fishing_rod'"
+              },
+              {
+                "sleeping": "query.is_sleeping && query.is_alive"
+              },
+              {
+                "attack.positions": "variable.attack_time >= 0.0"
+              },
+              {
+                "attack.rotations": "variable.attack_time >= 0.0"
+              },
+              {
+                "shield_block_main_hand": "query.blocking && query.get_equipped_item_name('off_hand') != 'shield' && query.get_equipped_item_name == 'shield'"
+              },
+              {
+                "shield_block_off_hand": "query.blocking && query.get_equipped_item_name('off_hand') == 'shield' && !(variable.item_use_normalized > 0 && variable.item_use_normalized < 1.0)"
+              },
+              {
+                "crossbow_controller": "query.get_equipped_item_name == 'crossbow'"
+              },
+              {
+                "third_person_bow_equipped": "query.get_equipped_item_name == 'bow' && (variable.item_use_normalized > 0 && variable.item_use_normalized < 1.0)"
+              }
+            ],
+            "transitions": [
+              {
+                "paperdoll": "variable.is_paperdoll"
+              },
+              {
+                "first_person": "variable.is_first_person"
+              },
+              {
+                "map_player": "variable.map_face_icon"
+              }
+            ]
+          }
+        }
+      },
+      "base_controller": "controller.animation.player.base",
+      "hudplayer": {
+        "initial_state": "default",
+        "states": {
+          "default": {
+            "animations": [
+              "humanoid_base_pose",
+              {
+                "look_at_target": "!query.is_sleeping && !query.is_emoting"
+              },
+              "move.arms",
+              "move.legs",
+              "cape",
+              {
+                "riding.arms": "query.is_riding"
+              },
+              {
+                "riding.legs": "query.is_riding"
+              },
+              "holding",
+              {
+                "brandish_spear": "variable.is_brandishing_spear"
+              },
+              {
+                "charging": "query.is_charging"
+              },
+              {
+                "sneaking": "query.is_sneaking && !query.is_sleeping"
+              },
+              "bob",
+              {
+                "damage_nearby_mobs": "variable.damage_nearby_mobs"
+              },
+              {
+                "swimming": "variable.swim_amount > 0.0"
+              },
+              {
+                "swimming.legs": "variable.swim_amount > 0.0"
+              },
+              {
+                "use_item_progress": "( variable.use_item_interval_progress > 0.0 ) || ( variable.use_item_startup_progress > 0.0 ) && !variable.is_brandishing_spear"
+              },
+              {
+                "sleeping": "query.is_sleeping && query.is_alive"
+              },
+              {
+                "attack.positions": "variable.attack_time >= 0.0"
+              },
+              {
+                "attack.rotations": "variable.attack_time >= 0.0"
+              },
+              {
+                "shield_block_main_hand": "query.blocking && query.get_equipped_item_name('off_hand') != 'shield' && query.get_equipped_item_name == 'shield'"
+              },
+              {
+                "shield_block_off_hand": "query.blocking && query.get_equipped_item_name('off_hand') == 'shield' && !(variable.item_use_normalized > 0 && variable.item_use_normalized < 1.0)"
+              },
+              {
+                "crossbow_controller": "query.get_equipped_item_name == 'crossbow'"
+              },
+              {
+                "third_person_bow_equipped": "query.get_equipped_item_name == 'bow' && (variable.item_use_normalized > 0 && variable.item_use_normalized < 1.0)"
+              }
+            ]
+          }
+        }
+      },
+      "look_at_target": {
+        "initial_state": "default",
+        "states": {
+          "default": {
+            "animations": [
+              "look_at_target_default"
+            ],
+            "transitions": [
+              {
+                "gliding": "query.is_gliding"
+              },
+              {
+                "swimming": "query.is_swimming"
+              }
+            ]
+          },
+          "gliding": {
+            "animations": [
+              "look_at_target_gliding"
+            ],
+            "transitions": [
+              {
+                "swimming": "query.is_swimming"
+              },
+              {
+                "default": "!query.is_gliding"
+              }
+            ]
+          },
+          "swimming": {
+            "animations": [
+              "look_at_target_swimming"
+            ],
+            "transitions": [
+              {
+                "gliding": "query.is_gliding"
+              },
+              {
+                "default": "!query.is_swimming"
+              }
+            ]
+          }
+        }
+      },
+      "first_person_attack_controller": {
+        "initial_state": "default",
+        "states": {
+          "default": {
+            "animations": [
+              "first_person_attack_rotation"
+            ],
+            "transitions": [
+              {
+                "vr_attack": "variable.is_using_vr"
+              }
+            ]
+          },
+          "vr_attack": {
+            "animations": [
+              "first_person_vr_attack_rotation"
+            ],
+            "transitions": [
+              {
+                "default": "!variable.is_using_vr"
+              }
+            ]
+          }
+        }
+      },
+      "first_person_map_controller": {
+        "initial_state": "default",
+        "states": {
+          "default": {
+            "transitions": [
+              {
+                "one_hand": "query.get_equipped_item_name('off_hand') == 'map' || query.get_equipped_item_name('off_hand') == 'shield'"
+              },
+              {
+                "two_hand": "query.get_equipped_item_name('off_hand') != 'map' && query.get_equipped_item_name('off_hand') != 'shield'"
+              }
+            ]
+          },
+          "one_hand": {
+            "animations": [
+              {
+                "first_person_map_hold_main_hand": "query.get_equipped_item_name(0, 1) == 'map'"
+              },
+              {
+                "first_person_map_hold_off_hand": "query.get_equipped_item_name('off_hand') == 'map' && (query.get_equipped_item_name == 'bow' ? !(variable.item_use_normalized > 0 && variable.item_use_normalized < 1.0) : 1.0)"
+              }
+            ],
+            "transitions": [
+              {
+                "default": "query.get_equipped_item_name(0, 1) != 'map' && query.get_equipped_item_name('off_hand') != 'map'"
+              },
+              {
+                "two_hand": "query.get_equipped_item_name('off_hand') != 'map' && query.get_equipped_item_name('off_hand') != 'shield'"
+              }
+            ]
+          },
+          "two_hand": {
+            "animations": [
+              "first_person_map_hold",
+              "first_person_map_hold_attack"
+            ],
+            "transitions": [
+              {
+                "default": "query.get_equipped_item_name(0, 1) != 'map' && query.get_equipped_item_name('off_hand') != 'map'"
+              },
+              {
+                "one_hand": "query.get_equipped_item_name('off_hand') == 'map' || query.get_equipped_item_name('off_hand') == 'shield'"
+              }
+            ]
+          }
+        }
+      },
+      "crossbow_controller": {
+        "initial_state": "default",
+        "states": {
+          "charge": {
+            "animations": [
+              "third_person_crossbow_equipped"
+            ],
+            "transitions": [
+              {
+                "default": "query.get_equipped_item_name != 'crossbow' || (query.item_remaining_use_duration <= 0.0 && !query.item_is_charged)"
+              },
+              {
+                "hold": "query.item_is_charged"
+              }
+            ]
+          },
+          "default": {
+            "transitions": [
+              {
+                "hold": "query.item_is_charged"
+              },
+              {
+                "charge": "query.item_remaining_use_duration > 0.0"
+              }
+            ]
+          },
+          "hold": {
+            "animations": [
+              "crossbow_hold"
+            ],
+            "transitions": [
+              {
+                "default": "query.get_equipped_item_name != 'crossbow' || (query.item_remaining_use_duration <= 0.0 && !query.item_is_charged)"
+              },
+              {
+                "charge": "query.item_remaining_use_duration > 0.0"
+              }
+            ]
+          }
+        }
+      },
+      "blink": {
+        "initial_state": "default",
+        "states": {
+          "default": {
+            "transitions": [
+              {
+                "open": "variable.is_blinking = 0; variable.last_blink_time = query.life_time; return variable.last_blink_time != 0;"
+              }
+            ]
+          },
+          "open": {
+            "transitions": [
+              {
+                "blink": "variable.is_blinking = 0; variable.return_from_blink = query.life_time + math.random(0, 0.2); return query.life_time > (variable.last_blink_time + math.random(3, 40));"
+              }
+            ]
+          },
+          "blink": {
+            "transitions": [
+              {
+                "open": "variable.is_blinking = 1; variable.last_blink_time = query.life_time; return query.all_animations_finished && (query.life_time > variable.return_from_blink);"
+              }
+            ]
+          }
+        }
+      }
+    }
+  }
+}

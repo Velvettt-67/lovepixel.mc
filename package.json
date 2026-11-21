@@ -1,0 +1,39 @@
+{
+  "name": "love-pixel-minecraft",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "@react-three/drei": "^10.7.9",
+    "@react-three/fiber": "^9.8.2",
+    "lenis": "^1.1.20",
+    "lucide-react": "^1.16.0",
+    "motion": "^12.4.0",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "react-router-dom": "^7.1.5",
+    "skinview3d": "^3.4.2",
+    "three": "^0.174.0",
+    "three-stdlib": "^2.35.0"
+  },
+  "devDependencies": {
+    "@tailwindcss/vite": "^4.0.0",
+    "@types/node": "^22.13.0",
+    "@types/react": "^19.0.0",
+    "@types/react-dom": "^19.0.0",
+    "@types/three": "^0.174.0",
+    "@vitejs/plugin-react": "^4.3.4",
+    "rollup": "4.68.7",
+    "tailwindcss": "^4.0.0",
+    "typescript": "^5.7.3",
+    "vite": "6.4.6"
+  },
+  "overrides": {
+    "rollup": "4.68.7"
+  }
+}

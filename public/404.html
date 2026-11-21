@@ -1,0 +1,247 @@
+<!doctype html>
+<html lang="en" class="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#080a0f" />
+    <title>404 — CHUNK NOT FOUND | Love Pixel</title>
+    
+    <!-- Google Fonts for authentic Minecraft typography -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Silkscreen:wght@400;700&display=swap" rel="stylesheet">
+    
+    <style>
+      :root {
+        --bg-primary: #080a0f;
+        --mc-green: #55ff55;
+        --mc-aqua: #55ffff;
+        --mc-dark-panel: #141518;
+      }
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+      body {
+        background-color: var(--bg-primary);
+        color: #e2e8f0;
+        font-family: 'Silkscreen', monospace;
+        min-height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 1.5rem;
+        background-image: radial-gradient(#27272a 1px, transparent 1px);
+        background-size: 20px 20px;
+      }
+      .mc-panel {
+        background-color: var(--mc-dark-panel);
+        border: 2px solid #27272a;
+        box-shadow: inset -2px -2px 0px 0px #09090b, inset 2px 2px 0px 0px #3f3f46, 0 20px 60px rgba(0,0,0,0.8);
+        border-radius: 1.5rem;
+        padding: 2.5rem 1.5rem;
+        max-width: 42rem;
+        width: 100%;
+        text-align: center;
+      }
+      @media(min-width: 640px) {
+        .mc-panel {
+          padding: 3.5rem 2.5rem;
+        }
+      }
+      .hud-pill {
+        display: inline-flex;
+        align-items: center;
+        gap: 0.5rem;
+        padding: 0.4rem 1rem;
+        border-radius: 9999px;
+        background: #09090b;
+        border: 1px solid #27272a;
+        font-size: 0.7rem;
+        margin-bottom: 1.5rem;
+      }
+      .voxel-chunk {
+        background: rgba(0,0,0,0.6);
+        border: 1px solid #27272a;
+        border-radius: 1rem;
+        padding: 1.25rem;
+        max-width: 20rem;
+        margin: 0 auto 2rem auto;
+      }
+      .chunk-grid {
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
+        gap: 4px;
+        margin-bottom: 4px;
+        height: 1rem;
+      }
+      .block {
+        border-radius: 2px;
+      }
+      .grass { background: #65a30d; border: 1px solid #365314; }
+      .dirt { background: #78350f; border: 1px solid #451a03; }
+      .stone { background: #52525b; border: 1px solid #27272a; }
+      .bedrock { background: #18181b; border: 1px solid #09090b; }
+      .void { border: 1px dashed rgba(85,255,255,0.4); background: rgba(6,182,212,0.1); display: flex; align-items: center; justify-content: center; font-size: 0.5rem; color: #55ffff; }
+      .empty { border: 1px dashed #27272a; }
+      
+      h1 {
+        font-size: 1.75rem;
+        color: #ffffff;
+        text-shadow: 2px 2px 0px #000;
+        margin-bottom: 0.75rem;
+        text-transform: uppercase;
+      }
+      @media(min-width: 640px) {
+        h1 { font-size: 2.25rem; }
+      }
+      p {
+        font-size: 0.85rem;
+        color: #cbd5e1;
+        line-height: 1.6;
+        max-width: 32rem;
+        margin: 0 auto 2rem auto;
+      }
+      .actions {
+        display: flex;
+        flex-direction: column;
+        gap: 0.75rem;
+        max-width: 30rem;
+        margin: 0 auto;
+      }
+      @media(min-width: 640px) {
+        .actions {
+          flex-direction: row;
+        }
+      }
+      .btn {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        gap: 0.5rem;
+        padding: 0.85rem 1.5rem;
+        border-radius: 0.75rem;
+        font-size: 0.75rem;
+        font-weight: 700;
+        text-transform: uppercase;
+        letter-spacing: 0.05em;
+        text-decoration: none;
+        cursor: pointer;
+        transition: all 0.2s;
+        font-family: inherit;
+      }
+      .btn-primary {
+        background: #55ff55;
+        color: #05070a;
+        border: 2px solid #80ff20;
+        box-shadow: 0 0 25px rgba(85,255,85,0.4);
+      }
+      .btn-primary:hover {
+        background: #80ff20;
+        transform: scale(1.03);
+      }
+      .btn-secondary {
+        background: #1e2024;
+        color: #f1f5f9;
+        border: 1px solid #3f3f46;
+      }
+      .btn-secondary:hover {
+        background: #27272a;
+        color: #ffffff;
+      }
+      .discord-row {
+        margin-top: 1.75rem;
+        padding-top: 1.25rem;
+        border-top: 1px solid #27272a;
+        font-size: 0.75rem;
+        color: #94a3b8;
+      }
+      .discord-link {
+        color: #55ffff;
+        text-decoration: none;
+      }
+      .discord-link:hover {
+        text-decoration: underline;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="mc-panel">
+      <!-- HUD Pill -->
+      <div class="hud-pill">
+        <span style="color: #64748b;">COORDS:</span>
+        <span style="color: #fb7185; font-weight: bold;">X: ~ / Y: VOID / Z: ~</span>
+        <span style="color: #475569;">•</span>
+        <span style="color: #64748b;">CHUNK:</span>
+        <span style="color: #ffaa00; font-weight: bold;">[NOT LOADED]</span>
+      </div>
+
+      <!-- Unloaded Chunk Geometry Representation -->
+      <div class="voxel-chunk">
+        <div class="chunk-grid">
+          <div class="block grass"></div>
+          <div class="block grass"></div>
+          <div class="block grass"></div>
+          <div class="block grass"></div>
+          <div class="block void">?</div>
+          <div class="block empty"></div>
+        </div>
+        <div class="chunk-grid">
+          <div class="block dirt"></div>
+          <div class="block dirt"></div>
+          <div class="block dirt"></div>
+          <div class="block dirt"></div>
+          <div class="block void"></div>
+          <div class="block empty"></div>
+        </div>
+        <div class="chunk-grid">
+          <div class="block stone"></div>
+          <div class="block stone"></div>
+          <div class="block stone"></div>
+          <div class="block empty"></div>
+          <div class="block empty"></div>
+          <div class="block empty"></div>
+        </div>
+        <div class="chunk-grid">
+          <div class="block bedrock"></div>
+          <div class="block bedrock"></div>
+          <div class="block empty"></div>
+          <div class="block empty"></div>
+          <div class="block empty"></div>
+          <div class="block empty"></div>
+        </div>
+        <div style="font-size: 0.6rem; color: #64748b; margin-top: 0.75rem;">
+          [CHUNK BORDER: UNLOADED VOID BOUNDARY]
+        </div>
+      </div>
+
+      <!-- Headline -->
+      <h1>404 — CHUNK NOT FOUND</h1>
+
+      <!-- Supporting Narrative Text -->
+      <p>
+        You have wandered beyond the loaded chunks. Let&apos;s get you back to the world.
+      </p>
+
+      <!-- Primary Actions -->
+      <div class="actions">
+        <a href="/" class="btn btn-primary">
+          <span>RETURN TO WORLD</span>
+        </a>
+        <a href="/store" class="btn btn-secondary">
+          <span>VISIT STORE</span>
+        </a>
+      </div>
+
+      <!-- Discord Row -->
+      <div class="discord-row">
+        <span>Need world assistance? </span>
+        <a href="https://discord.gg/lovepixel" target="_blank" rel="noopener noreferrer" class="discord-link">
+          JOIN DISCORD (discord.gg/lovepixel)
+        </a>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,380 @@
+@import "tailwindcss";
+@import "lenis/dist/lenis.css";
+
+html {
+  scroll-behavior: smooth;
+}
+
+html.lenis,
+html.lenis body {
+  height: auto;
+}
+
+@layer base {
+  :root {
+    --bg-primary: #080a0f;
+    --bg-secondary: #0d121c;
+    --bg-card: rgba(16, 22, 34, 0.85);
+    
+    /* Authentic Minecraft Palettes */
+    --mc-grass: #4d7c0f;
+    --mc-dirt: #3e2723;
+    --mc-stone: #52525b;
+    --mc-obsidian: #1e1435;
+    --mc-gold: #ffaa00;
+    --mc-diamond: #55ffff;
+    --mc-emerald: #55ff55;
+    --mc-xp: #80ff20;
+    
+    color-scheme: dark;
+  }
+
+  body {
+    background-color: var(--bg-primary);
+    color: #e2e8f0;
+    font-family: 'Silkscreen', monospace;
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+    selection-background-color: rgba(77, 124, 15, 0.4);
+    selection-color: #ffffff;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  p, span, div, a, button, input, textarea, select, label, h1, h2, h3, h4, h5, h6 {
+    font-family: inherit;
+  }
+
+  ::selection {
+    background: rgba(85, 255, 85, 0.35);
+    color: #ffffff;
+  }
+}
+
+/* Wide layout utility matching 92-94vw desktop width */
+.mc-container {
+  max-width: 1680px;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+@media (min-width: 640px) {
+  .mc-container {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .mc-container {
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
+  }
+}
+
+/* Custom Minecraft Hardware Cursors (0ms delay, touch-safe) */
+@media (hover: hover) and (pointer: fine) {
+  html,
+  body {
+    cursor: url('/assets/cursors/mc-cursor-default.svg') 0 0, default;
+  }
+
+  a,
+  button,
+  [role="button"],
+  input[type="submit"],
+  input[type="button"],
+  .mc-button,
+  .mc-button-primary,
+  .cursor-pointer {
+    cursor: url('/assets/cursors/mc-cursor-pointer.svg') 0 0, pointer !important;
+  }
+
+  input[type="text"],
+  input[type="email"],
+  input[type="number"],
+  input[type="password"],
+  textarea,
+  [contenteditable="true"] {
+    cursor: text !important;
+  }
+}
+
+/* Authentic Minecraft Typography Tokens */
+.font-minecraft {
+  font-family: 'Silkscreen', monospace;
+  letter-spacing: -0.01em;
+}
+
+.font-pixel {
+  font-family: 'Press Start 2P', monospace;
+  letter-spacing: -0.03em;
+}
+
+.font-mono {
+  font-family: 'VT323', ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+}
+
+/* Classic Minecraft In-Game Text Shadows */
+.mc-shadow {
+  text-shadow: 2px 2px 0px #000000;
+}
+
+.mc-shadow-gold {
+  color: #ffaa00;
+  text-shadow: 2px 2px 0px #3f2a00;
+}
+
+.mc-shadow-aqua {
+  color: #55ffff;
+  text-shadow: 2px 2px 0px #153f3f;
+}
+
+.mc-shadow-green {
+  color: #55ff55;
+  text-shadow: 2px 2px 0px #153f15;
+}
+
+.mc-shadow-obsidian {
+  color: #c084fc;
+  text-shadow: 2px 2px 0px #3b0764;
+}
+
+/* Minecraft UI Component Elements */
+.mc-panel {
+  background: #1c1d22;
+  border-top: 2px solid #555861;
+  border-left: 2px solid #555861;
+  border-right: 2px solid #0d0e11;
+  border-bottom: 2px solid #0d0e11;
+  box-shadow: 0 10px 30px -10px rgba(0, 0, 0, 0.8), inset 0 0 0 1px #282a31;
+}
+
+.mc-slot {
+  background: #141518;
+  border-top: 2px solid #090a0c;
+  border-left: 2px solid #090a0c;
+  border-right: 2px solid #363942;
+  border-bottom: 2px solid #363942;
+  position: relative;
+}
+
+.mc-button {
+  background: #2f3238;
+  border-top: 2px solid #5f646d;
+  border-left: 2px solid #5f646d;
+  border-right: 2px solid #141517;
+  border-bottom: 2px solid #141517;
+  box-shadow: inset 0 0 0 1px #222429;
+  text-shadow: 2px 2px 0px #000000;
+  transition: all 0.12s cubic-bezier(0.16, 1, 0.3, 1);
+  user-select: none;
+}
+
+.mc-button:hover:not(:disabled) {
+  background: #3b3f46;
+  border-top-color: #7a808c;
+  border-left-color: #7a808c;
+  color: #ffffff;
+  transform: translateY(-1px);
+}
+
+.mc-button:active:not(:disabled) {
+  background: #24262b;
+  border-top: 2px solid #141517;
+  border-left: 2px solid #141517;
+  border-right: 2px solid #5f646d;
+  border-bottom: 2px solid #5f646d;
+  transform: translateY(1px);
+}
+
+.mc-button-primary {
+  background: #15803d;
+  border-top: 2px solid #4ade80;
+  border-left: 2px solid #4ade80;
+  border-right: 2px solid #052e16;
+  border-bottom: 2px solid #052e16;
+  box-shadow: inset 0 0 0 1px #166534;
+  text-shadow: 2px 2px 0px #052e16;
+  color: #ffffff;
+  transition: all 0.12s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.mc-button-primary:hover:not(:disabled) {
+  background: #16a34a;
+  border-top-color: #86efac;
+  border-left-color: #86efac;
+  transform: translateY(-1px);
+  box-shadow: inset 0 0 0 1px #166534, 0 0 20px rgba(74, 222, 128, 0.35);
+}
+
+.mc-button-primary:active:not(:disabled) {
+  background: #14532d;
+  border-top: 2px solid #052e16;
+  border-left: 2px solid #052e16;
+  border-right: 2px solid #4ade80;
+  border-bottom: 2px solid #4ade80;
+  transform: translateY(1px);
+}
+
+.mc-tooltip {
+  background: rgba(16, 0, 24, 0.96);
+  border: 2px solid #28005b;
+  box-shadow: 0 0 0 1px #5000af, 0 8px 25px rgba(0,0,0,0.8);
+  color: #ffffff;
+}
+
+/* Item Enchantment Glint / Icon Hover effect */
+.mc-item-hover {
+  transition: transform 0.2s cubic-bezier(0.16, 1, 0.3, 1), filter 0.2s ease;
+}
+
+.mc-item-hover:hover {
+  transform: translateY(-2px) scale(1.06);
+  filter: drop-shadow(0 0 8px rgba(85, 255, 85, 0.5));
+}
+
+/* Glass cards and atmospheric panels */
+.glass-panel {
+  background: rgba(13, 17, 26, 0.85);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  box-shadow: 0 20px 40px -15px rgba(0, 0, 0, 0.6);
+}
+
+.glass-nav {
+  background: rgba(8, 10, 15, 0.35);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.07);
+}
+
+.glass-card {
+  background: linear-gradient(135deg, rgba(19, 24, 36, 0.78) 0%, rgba(11, 14, 22, 0.88) 100%);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.07);
+  transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.glass-card:hover {
+  border-color: rgba(85, 255, 85, 0.4);
+  box-shadow: 0 15px 35px -10px rgba(16, 185, 129, 0.25);
+  transform: translateY(-2px);
+}
+
+/* Sleek dark scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #080a0f;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #1e293b;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #4d7c0f;
+}
+
+/* Reduced motion */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* Cinematic Minecraft Camera Drift & Weather VFX */
+@keyframes subtle-drift {
+  0% {
+    transform: scale(1.03) translate(0, 0);
+  }
+  50% {
+    transform: scale(1.10) translate(-10px, -6px);
+  }
+  100% {
+    transform: scale(1.03) translate(0, 0);
+  }
+}
+
+.animate-subtle-drift {
+  animation: subtle-drift 24s ease-in-out infinite alternate;
+  will-change: transform;
+}
+
+@keyframes snow-fall {
+  0% {
+    transform: translateY(-10px) translateX(0);
+    opacity: 0;
+  }
+  15% {
+    opacity: 0.9;
+  }
+  85% {
+    opacity: 0.9;
+  }
+  100% {
+    transform: translateY(105vh) translateX(35px);
+    opacity: 0;
+  }
+}
+
+.animate-snow-fall {
+  animation: snow-fall linear infinite;
+  will-change: transform, opacity;
+}
+
+@keyframes cherry-fall {
+  0% {
+    transform: translateY(-10px) translateX(0) rotate(0deg);
+    opacity: 0;
+  }
+  15% {
+    opacity: 0.85;
+  }
+  50% {
+    transform: translateY(50vh) translateX(25px) rotate(180deg);
+  }
+  85% {
+    opacity: 0.85;
+  }
+  100% {
+    transform: translateY(105vh) translateX(50px) rotate(360deg);
+    opacity: 0;
+  }
+}
+
+.animate-cherry-fall {
+  animation: cherry-fall linear infinite;
+  will-change: transform, opacity;
+}
+
+@keyframes explosion-flash {
+  0% {
+    opacity: 0.95;
+  }
+  30% {
+    opacity: 0.7;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+.animate-explosion-flash {
+  animation: explosion-flash cubic-bezier(0.1, 0.9, 0.2, 1) forwards;
+  will-change: opacity;
+}
+
